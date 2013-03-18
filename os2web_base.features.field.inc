@@ -224,7 +224,7 @@ function os2web_base_field_default_fields() {
       'module' => 'os2web_cp_service_cp_case',
       'settings' => array(),
       'translatable' => '0',
-      'type' => 'case_ident',
+      'type' => 'os2web_esdh_field_case_ident',
     ),
     'field_instance' => array(
       'bundle' => 'os2web_base_contentpage',
@@ -236,7 +236,7 @@ function os2web_base_field_default_fields() {
           'label' => 'hidden',
           'module' => 'os2web_cp_service_cp_case',
           'settings' => array(),
-          'type' => 'case_ident_formatter',
+          'type' => 'os2web_esdh_field_case_ident_formatter',
           'weight' => '4',
         ),
         'related_block' => array(
@@ -263,7 +263,7 @@ function os2web_base_field_default_fields() {
         'active' => 0,
         'module' => 'os2web_cp_service_cp_case',
         'settings' => array(),
-        'type' => 'case_ident_widget',
+        'type' => 'os2web_esdh_field_case_ident_widget',
         'weight' => '51',
       ),
     ),
@@ -279,15 +279,15 @@ function os2web_base_field_default_fields() {
       'field_name' => 'field_os2web_base_field_doc',
       'foreign keys' => array(),
       'indexes' => array(
-        'doc_ident' => array(
-          0 => 'doc_ident',
+        'os2web_esdh_field_doc_ident' => array(
+          0 => 'os2web_esdh_field_doc_ident',
         ),
       ),
       'locked' => '0',
       'module' => 'os2web_cp_service_cp_doc',
       'settings' => array(),
       'translatable' => '0',
-      'type' => 'doc_ident',
+      'type' => 'os2web_esdh_field_doc_ident',
     ),
     'field_instance' => array(
       'bundle' => 'os2web_base_contentpage',
@@ -299,7 +299,7 @@ function os2web_base_field_default_fields() {
           'label' => 'hidden',
           'module' => 'os2web_cp_service_cp_doc',
           'settings' => array(),
-          'type' => 'doc_ident_formatter',
+          'type' => 'os2web_esdh_field_doc_ident_formatter',
           'weight' => '5',
         ),
         'related_block' => array(
@@ -326,7 +326,7 @@ function os2web_base_field_default_fields() {
         'active' => 0,
         'module' => 'os2web_cp_service_cp_doc',
         'settings' => array(),
-        'type' => 'doc_ident_widget',
+        'type' => 'os2web_esdh_field_doc_ident_widget',
         'weight' => '52',
       ),
     ),
