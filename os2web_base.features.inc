@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * os2web_indholdstyper.features.inc
+ * os2web_base.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function os2web_indholdstyper_ctools_plugin_api() {
+function os2web_base_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
@@ -29,7 +29,7 @@ function os2web_indholdstyper_ctools_plugin_api() {
 /**
  * Implements hook_image_default_styles().
  */
-function os2web_indholdstyper_image_default_styles() {
+function os2web_base_image_default_styles() {
   $styles = array();
 
   // Exported image style: os2web_base_style_image.
@@ -209,7 +209,7 @@ function os2web_indholdstyper_image_default_styles() {
 /**
  * Implements hook_node_info().
  */
-function os2web_indholdstyper_node_info() {
+function os2web_base_node_info() {
   $items = array(
     'os2web_base_contentpage' => array(
       'name' => t('Indholdsside'),

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * os2web_indholdstyper.layouts.inc
+ * os2web_base.layouts.inc
  */
 
 /**
  * Implements hook_default_panels_layout().
  */
-function os2web_indholdstyper_default_panels_layout() {
+function os2web_base_default_panels_layout() {
   $export = array();
 
   $layout = new stdClass();

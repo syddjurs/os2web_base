@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * os2web_indholdstyper.features.taxonomy.inc
+ * os2web_base.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function os2web_indholdstyper_taxonomy_default_vocabularies() {
+function os2web_base_taxonomy_default_vocabularies() {
   return array(
     'os2web_base_tax_promoteto' => array(
       'name' => 'Forfrem til',

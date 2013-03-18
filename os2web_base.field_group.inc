@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * os2web_indholdstyper.field_group.inc
+ * os2web_base.field_group.inc
  */
 
 /**
  * Implements hook_field_group_info().
  */
-function os2web_indholdstyper_field_group_info() {
+function os2web_base_field_group_info() {
   $export = array();
 
   $field_group = new stdClass();

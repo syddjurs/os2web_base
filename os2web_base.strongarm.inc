@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * os2web_indholdstyper.strongarm.inc
+ * os2web_base.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function os2web_indholdstyper_strongarm() {
+function os2web_base_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

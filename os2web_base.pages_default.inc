@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * os2web_indholdstyper.pages_default.inc
+ * os2web_base.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_handlers().
  */
-function os2web_indholdstyper_default_page_manager_handlers() {
+function os2web_base_default_page_manager_handlers() {
   $export = array();
 
   $handler = new stdClass();

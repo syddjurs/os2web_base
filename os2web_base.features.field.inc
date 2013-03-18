@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * os2web_indholdstyper.features.field.inc
+ * os2web_base.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function os2web_indholdstyper_field_default_fields() {
+function os2web_base_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-os2web_base_contentpage-body'.
