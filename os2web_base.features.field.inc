@@ -221,7 +221,7 @@ function os2web_indholdstyper_field_default_fields() {
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
-      'module' => 'os2web_case_field',
+      'module' => 'os2web_cp_service_cp_case',
       'settings' => array(),
       'translatable' => '0',
       'type' => 'case_ident',
@@ -234,7 +234,7 @@ function os2web_indholdstyper_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'os2web_case_field',
+          'module' => 'os2web_cp_service_cp_case',
           'settings' => array(),
           'type' => 'case_ident_formatter',
           'weight' => '4',
@@ -261,7 +261,7 @@ function os2web_indholdstyper_field_default_fields() {
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'os2web_case_field',
+        'module' => 'os2web_cp_service_cp_case',
         'settings' => array(),
         'type' => 'case_ident_widget',
         'weight' => '51',
@@ -284,7 +284,7 @@ function os2web_indholdstyper_field_default_fields() {
         ),
       ),
       'locked' => '0',
-      'module' => 'os2web_doc_field',
+      'module' => 'os2web_cp_service_cp_doc',
       'settings' => array(),
       'translatable' => '0',
       'type' => 'doc_ident',
@@ -297,7 +297,7 @@ function os2web_indholdstyper_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'os2web_doc_field',
+          'module' => 'os2web_cp_service_cp_doc',
           'settings' => array(),
           'type' => 'doc_ident_formatter',
           'weight' => '5',
@@ -324,7 +324,7 @@ function os2web_indholdstyper_field_default_fields() {
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'os2web_doc_field',
+        'module' => 'os2web_cp_service_cp_doc',
         'settings' => array(),
         'type' => 'doc_ident_widget',
         'weight' => '52',
