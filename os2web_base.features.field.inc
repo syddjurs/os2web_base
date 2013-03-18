@@ -332,14 +332,14 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-os2web_base_contentpage-field_os2web_base_field_editortags'.
-  $fields['node-os2web_base_contentpage-field_os2web_base_field_editortags'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_os2web_base_field_edi_tags'.
+  $fields['node-os2web_base_contentpage-field_os2web_base_field_edi_tags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_os2web_base_field_editortags',
+      'field_name' => 'field_os2web_base_field_edi_tags',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -389,7 +389,7 @@ function os2web_base_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_os2web_base_field_editortags',
+      'field_name' => 'field_os2web_base_field_edi_tags',
       'label' => 'Stikord',
       'required' => 0,
       'settings' => array(
@@ -1667,14 +1667,14 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-os2web_base_gallery-field_os2web_base_field_editortags'.
-  $fields['node-os2web_base_gallery-field_os2web_base_field_editortags'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_os2web_base_field_edi_tags'.
+  $fields['node-os2web_base_gallery-field_os2web_base_field_edi_tags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_os2web_base_field_editortags',
+      'field_name' => 'field_os2web_base_field_edi_tags',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -1730,7 +1730,7 @@ function os2web_base_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_os2web_base_field_editortags',
+      'field_name' => 'field_os2web_base_field_edi_tags',
       'label' => 'Stikord',
       'required' => 0,
       'settings' => array(
@@ -2648,14 +2648,14 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-os2web_base_iframe-field_os2web_base_field_editortags'.
-  $fields['node-os2web_base_iframe-field_os2web_base_field_editortags'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_os2web_base_field_edi_tags'.
+  $fields['node-os2web_base_iframe-field_os2web_base_field_edi_tags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_os2web_base_field_editortags',
+      'field_name' => 'field_os2web_base_field_edi_tags',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -2711,7 +2711,7 @@ function os2web_base_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_os2web_base_field_editortags',
+      'field_name' => 'field_os2web_base_field_edi_tags',
       'label' => 'Stikord',
       'required' => 0,
       'settings' => array(
@@ -4113,14 +4113,14 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-os2web_base_news-field_os2web_base_field_editortags'.
-  $fields['node-os2web_base_news-field_os2web_base_field_editortags'] = array(
+  // Exported field: 'node-os2web_base_news-field_os2web_base_field_edi_tags'.
+  $fields['node-os2web_base_news-field_os2web_base_field_edi_tags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_os2web_base_field_editortags',
+      'field_name' => 'field_os2web_base_field_edi_tags',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -4174,7 +4174,7 @@ function os2web_base_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_os2web_base_field_editortags',
+      'field_name' => 'field_os2web_base_field_edi_tags',
       'label' => 'Stikord',
       'required' => 0,
       'settings' => array(

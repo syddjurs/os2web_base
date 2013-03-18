@@ -131,7 +131,7 @@ function os2web_base_field_group_info() {
     'label' => 'Emneord',
     'weight' => '7',
     'children' => array(
-      0 => 'field_os2web_base_field_editortags',
+      0 => 'field_os2web_base_field_edi_tags',
       1 => 'field_os2web_base_field_loca_ref',
       2 => 'field_os2web_base_field_organiz',
       3 => 'field_os2web_base_field_politics',
@@ -398,7 +398,7 @@ function os2web_base_field_group_info() {
       0 => 'field_os2web_base_field_kle_ref',
       1 => 'field_os2web_base_field_loca_ref',
       2 => 'field_os2web_base_field_organiz',
-      3 => 'field_os2web_base_field_editortags',
+      3 => 'field_os2web_base_field_edi_tags',
       4 => 'field_os2web_base_field_politics',
     ),
     'format_type' => 'fieldset',
@@ -427,7 +427,7 @@ function os2web_base_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'field_os2web_base_field_kle_ref',
-      1 => 'field_os2web_base_field_editortags',
+      1 => 'field_os2web_base_field_edi_tags',
       2 => 'field_os2web_base_field_organiz',
       3 => 'field_os2web_base_field_loca_ref',
       4 => 'field_os2web_base_field_politics',
@@ -459,7 +459,7 @@ function os2web_base_field_group_info() {
     'children' => array(
       0 => 'field_os2web_base_field_kle_ref',
       1 => 'field_os2web_base_field_organiz',
-      2 => 'field_os2web_base_field_editortags',
+      2 => 'field_os2web_base_field_edi_tags',
       3 => 'field_os2web_base_field_loca_ref',
       4 => 'field_os2web_base_field_politics',
     ),
