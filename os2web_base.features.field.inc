@@ -1132,7 +1132,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'site_struktur',
+            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
             'parent' => '0',
             'depth' => '',
           ),
@@ -2222,7 +2222,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'site_struktur',
+            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
             'parent' => '0',
             'depth' => '',
           ),
@@ -3710,7 +3710,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'site_struktur',
+            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
             'parent' => '0',
             'depth' => '',
           ),
@@ -4753,7 +4753,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'site_struktur',
+            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
             'parent' => '0',
             'depth' => '',
           ),
@@ -5498,7 +5498,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'site_struktur',
+            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
             'parent' => '0',
             'depth' => '',
           ),
@@ -5986,7 +5986,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'site_struktur',
+            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
             'parent' => '0',
             'depth' => '',
           ),
@@ -6121,8 +6121,8 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-site_struktur-field_os2web_base_field_ref_node'.
-  $fields['taxonomy_term-site_struktur-field_os2web_base_field_ref_node'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_base_field_ref_node'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_base_field_ref_node'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -6181,7 +6181,7 @@ function os2web_base_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'site_struktur',
+      'bundle' => 'os2web_taxonomies_tax_site_struc',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Vælg de spotboxe der skal vises nederst på siden.',
@@ -6215,8 +6215,8 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-site_struktur-field_os2web_base_field_ref_focu'.
-  $fields['taxonomy_term-site_struktur-field_os2web_base_field_ref_focu'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_base_field_ref_focu'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_base_field_ref_focu'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -6274,7 +6274,7 @@ function os2web_base_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'site_struktur',
+      'bundle' => 'os2web_taxonomies_tax_site_struc',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
