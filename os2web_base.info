@@ -224,4 +224,26 @@ features[variable][] = node_submitted_media
 features[variable][] = node_submitted_os2web_base_news
 features[variable][] = node_submitted_os2web_base_rotating_image
 features[variable][] = node_submitted_os2web_base_selfservice_link
+
+
+features[user_permission][] = create contentpage content
+features[user_permission][] = create galleri content
+features[user_permission][] = create news content
+features[user_permission][] = create rotating_image content
+features[user_permission][] = delete any contentpage content
+features[user_permission][] = delete any galleri content
+features[user_permission][] = delete any news content
+features[user_permission][] = delete any rotating_image content
+features[user_permission][] = delete own contentpage content
+features[user_permission][] = delete own galleri content
+features[user_permission][] = delete own news content
+features[user_permission][] = delete own rotating_image content
+features[user_permission][] = edit any contentpage content
+features[user_permission][] = edit any galleri content
+features[user_permission][] = edit any news content
+features[user_permission][] = edit any rotating_image content
+features[user_permission][] = edit own contentpage content
+features[user_permission][] = edit own galleri content
+features[user_permission][] = edit own news content
+features[user_permission][] = edit own rotating_image content
 timestamp = 1353326099
