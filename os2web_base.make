@@ -56,3 +56,9 @@ projects[field_group][version] = "1.1"
 
 projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][version] = "1.2"
+
+projects[libraries][subdir] = "contrib"
+projects[libraries][version] = "2.1"
+
+projects[link][subdir] = "contrib"
+projects[link][version] = "1.1"

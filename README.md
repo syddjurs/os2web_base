@@ -23,6 +23,8 @@ Dependencies
 - page_manager
 - panels
 - strongarm
+- libraries
+- link
 - os2web_taxonomies
 
 Installation
