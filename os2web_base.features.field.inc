@@ -827,7 +827,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'organisation',
+            'vocabulary' => 'os2web_taxonomies_tax_org',
             'parent' => '0',
           ),
         ),
@@ -904,7 +904,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'politik',
+            'vocabulary' => 'os2web_taxonomies_tax_politics',
             'parent' => '0',
           ),
         ),
@@ -1334,7 +1334,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'kle',
+            'vocabulary' => 'os2web_taxonomies_tax_kle',
             'parent' => '0',
           ),
         ),
@@ -1411,7 +1411,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'egennavne_stednavne',
+            'vocabulary' => 'os2web_taxonomies_tax_places',
             'parent' => '0',
           ),
         ),
@@ -1952,7 +1952,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'organisation',
+            'vocabulary' => 'os2web_taxonomies_tax_org',
             'parent' => '0',
           ),
         ),
@@ -2138,7 +2138,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'politik',
+            'vocabulary' => 'os2web_taxonomies_tax_politics',
             'parent' => '0',
           ),
         ),
@@ -2300,7 +2300,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'kle',
+            'vocabulary' => 'os2web_taxonomies_tax_kle',
             'parent' => '0',
           ),
         ),
@@ -2383,7 +2383,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'egennavne_stednavne',
+            'vocabulary' => 'os2web_taxonomies_tax_places',
             'parent' => '0',
           ),
         ),
@@ -2713,7 +2713,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'organisation',
+            'vocabulary' => 'os2web_taxonomies_tax_org',
             'parent' => '0',
           ),
         ),
@@ -2796,7 +2796,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'politik',
+            'vocabulary' => 'os2web_taxonomies_tax_politics',
             'parent' => '0',
           ),
         ),
@@ -2941,7 +2941,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'kle',
+            'vocabulary' => 'os2web_taxonomies_tax_kle',
             'parent' => '0',
           ),
         ),
@@ -3024,7 +3024,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'egennavne_stednavne',
+            'vocabulary' => 'os2web_taxonomies_tax_places',
             'parent' => '0',
           ),
         ),
@@ -4220,7 +4220,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'organisation',
+            'vocabulary' => 'os2web_taxonomies_tax_org',
             'parent' => '0',
           ),
         ),
@@ -4301,7 +4301,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'politik',
+            'vocabulary' => 'os2web_taxonomies_tax_politics',
             'parent' => '0',
           ),
         ),
@@ -4899,7 +4899,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'kle',
+            'vocabulary' => 'os2web_taxonomies_tax_kle',
             'parent' => '0',
           ),
         ),
@@ -4980,7 +4980,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'egennavne_stednavne',
+            'vocabulary' => 'os2web_taxonomies_tax_places',
             'parent' => '0',
           ),
         ),
@@ -6065,7 +6065,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'kle',
+            'vocabulary' => 'os2web_taxonomies_tax_kle',
             'parent' => '0',
           ),
         ),
