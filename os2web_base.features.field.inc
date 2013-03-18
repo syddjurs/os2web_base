@@ -236,7 +236,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'redaktoertags',
+            'vocabulary' => 'os2web_taxonomies_tax_editor_tag',
             'parent' => '0',
           ),
         ),
@@ -1571,7 +1571,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'redaktoertags',
+            'vocabulary' => 'os2web_taxonomies_tax_editor_tag',
             'parent' => '0',
           ),
         ),
@@ -2552,7 +2552,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'redaktoertags',
+            'vocabulary' => 'os2web_taxonomies_tax_editor_tag',
             'parent' => '0',
           ),
         ),
@@ -4017,7 +4017,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'redaktoertags',
+            'vocabulary' => 'os2web_taxonomies_tax_editor_tag',
             'parent' => '0',
           ),
         ),
