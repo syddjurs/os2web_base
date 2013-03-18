@@ -13,10 +13,10 @@ function os2web_indholdstyper_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_billeder|node|contentpage|form';
+  $field_group->identifier = 'group_billeder|node|os2web_base_contentpage|form';
   $field_group->group_name = 'group_billeder';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'contentpage';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_indholdsside';
   $field_group->data = array(
@@ -37,15 +37,15 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_billeder|node|contentpage|form'] = $field_group;
+  $export['group_billeder|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_billede|node|news|form';
+  $field_group->identifier = 'group_billede|node|os2web_base_news|form';
   $field_group->group_name = 'group_billede';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'news';
+  $field_group->bundle = 'os2web_base_news';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -59,15 +59,15 @@ function os2web_indholdstyper_field_group_info() {
       'label' => 'Billede',
     ),
   );
-  $export['group_billede|node|news|form'] = $field_group;
+  $export['group_billede|node|os2web_base_news|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_document|node|contentpage|default';
+  $field_group->identifier = 'group_document|node|os2web_base_contentpage|default';
   $field_group->group_name = 'group_document';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'contentpage';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -87,15 +87,15 @@ function os2web_indholdstyper_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_document|node|contentpage|default'] = $field_group;
+  $export['group_document|node|os2web_base_contentpage|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_esdh|node|contentpage|form';
+  $field_group->identifier = 'group_esdh|node|os2web_base_contentpage|form';
   $field_group->group_name = 'group_esdh';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'contentpage';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_indholdsside';
   $field_group->data = array(
@@ -116,15 +116,15 @@ function os2web_indholdstyper_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_esdh|node|contentpage|form'] = $field_group;
+  $export['group_esdh|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_extras|node|contentpage|form';
+  $field_group->identifier = 'group_extras|node|os2web_base_contentpage|form';
   $field_group->group_name = 'group_extras';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'contentpage';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_indholdsside';
   $field_group->data = array(
@@ -146,15 +146,15 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_extras|node|contentpage|form'] = $field_group;
+  $export['group_extras|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_general|node|contentpage|form';
+  $field_group->identifier = 'group_general|node|os2web_base_contentpage|form';
   $field_group->group_name = 'group_general';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'contentpage';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_indholdsside';
   $field_group->data = array(
@@ -175,15 +175,15 @@ function os2web_indholdstyper_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_general|node|contentpage|form'] = $field_group;
+  $export['group_general|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_gruppe3|node|contentpage|form';
+  $field_group->identifier = 'group_gruppe3|node|os2web_base_contentpage|form';
   $field_group->group_name = 'group_gruppe3';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'contentpage';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_indholdsside';
   $field_group->data = array(
@@ -207,15 +207,15 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_gruppe3|node|contentpage|form'] = $field_group;
+  $export['group_gruppe3|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_hidden|node|contentpage|form';
+  $field_group->identifier = 'group_hidden|node|os2web_base_contentpage|form';
   $field_group->group_name = 'group_hidden';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'contentpage';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_gruppe3';
   $field_group->data = array(
@@ -235,15 +235,15 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_hidden|node|contentpage|form'] = $field_group;
+  $export['group_hidden|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_hidden|node|galleri|form';
+  $field_group->identifier = 'group_hidden|node|os2web_base_gallery|form';
   $field_group->group_name = 'group_hidden';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'galleri';
+  $field_group->bundle = 'os2web_base_gallery';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -264,15 +264,15 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_hidden|node|galleri|form'] = $field_group;
+  $export['group_hidden|node|os2web_base_gallery|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_hidden|node|news|form';
+  $field_group->identifier = 'group_hidden|node|os2web_base_news|form';
   $field_group->group_name = 'group_hidden';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'news';
+  $field_group->bundle = 'os2web_base_news';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_indstillinger';
   $field_group->data = array(
@@ -294,15 +294,15 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_hidden|node|news|form'] = $field_group;
+  $export['group_hidden|node|os2web_base_news|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_indholdsside|node|contentpage|form';
+  $field_group->identifier = 'group_indholdsside|node|os2web_base_contentpage|form';
   $field_group->group_name = 'group_indholdsside';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'contentpage';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -323,17 +323,17 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_indholdsside|node|contentpage|form'] = $field_group;
+  $export['group_indholdsside|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_indstillinger|node|news|form';
+  $field_group->identifier = 'group_indstillinger|node|os2web_base_news|form';
   $field_group->group_name = 'group_indstillinger';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'news';
+  $field_group->bundle = 'os2web_base_news';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_news_tabs';
+  $field_group->parent_name = 'group_os2web_base_news_tabs';
   $field_group->data = array(
     'label' => 'Indstillinger',
     'weight' => '3',
@@ -353,15 +353,15 @@ function os2web_indholdstyper_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_indstillinger|node|news|form'] = $field_group;
+  $export['group_indstillinger|node|os2web_base_news|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_news_tabs|node|news|form';
-  $field_group->group_name = 'group_news_tabs';
+  $field_group->identifier = 'group_os2web_base_news_tabs|node|os2web_base_news|form';
+  $field_group->group_name = 'group_os2web_base_news_tabs';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'news';
+  $field_group->bundle = 'os2web_base_news';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -380,15 +380,15 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_news_tabs|node|news|form'] = $field_group;
+  $export['group_os2web_base_news_tabs|node|os2web_base_news|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_taksonomi|node|galleri|form';
+  $field_group->identifier = 'group_taksonomi|node|os2web_base_gallery|form';
   $field_group->group_name = 'group_taksonomi';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'galleri';
+  $field_group->bundle = 'os2web_base_gallery';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -411,15 +411,15 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_taksonomi|node|galleri|form'] = $field_group;
+  $export['group_taksonomi|node|os2web_base_gallery|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_taksonomi|node|iframe_selvbetjeningsl_sning_mm|form';
+  $field_group->identifier = 'group_taksonomi|node|os2web_base_iframe|form';
   $field_group->group_name = 'group_taksonomi';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'iframe_selvbetjeningsl_sning_mm';
+  $field_group->bundle = 'os2web_base_iframe';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -442,17 +442,17 @@ function os2web_indholdstyper_field_group_info() {
       ),
     ),
   );
-  $export['group_taksonomi|node|iframe_selvbetjeningsl_sning_mm|form'] = $field_group;
+  $export['group_taksonomi|node|os2web_base_iframe|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_taksonomi|node|news|form';
+  $field_group->identifier = 'group_taksonomi|node|os2web_base_news|form';
   $field_group->group_name = 'group_taksonomi';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'news';
+  $field_group->bundle = 'os2web_base_news';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_news_tabs';
+  $field_group->parent_name = 'group_os2web_base_news_tabs';
   $field_group->data = array(
     'label' => 'Emneord',
     'weight' => '2',
@@ -474,17 +474,17 @@ function os2web_indholdstyper_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_taksonomi|node|news|form'] = $field_group;
+  $export['group_taksonomi|node|os2web_base_news|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_tekst|node|news|form';
+  $field_group->identifier = 'group_tekst|node|os2web_base_news|form';
   $field_group->group_name = 'group_tekst';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'news';
+  $field_group->bundle = 'os2web_base_news';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_news_tabs';
+  $field_group->parent_name = 'group_os2web_base_news_tabs';
   $field_group->data = array(
     'label' => 'Tekst',
     'weight' => '1',
@@ -506,7 +506,7 @@ function os2web_indholdstyper_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_tekst|node|news|form'] = $field_group;
+  $export['group_tekst|node|os2web_base_news|form'] = $field_group;
 
   return $export;
 }

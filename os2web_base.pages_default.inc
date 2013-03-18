@@ -31,7 +31,7 @@ function os2web_indholdstyper_default_page_manager_handlers() {
         'identifier' => 'Redigeringsformular',
         'keyword' => 'node_add',
         'name' => 'node_add_form',
-        'type' => 'contentpage',
+        'type' => 'os2web_base_contentpage',
         'id' => 1,
       ),
     ),
@@ -42,7 +42,7 @@ function os2web_indholdstyper_default_page_manager_handlers() {
           'name' => 'node_type',
           'settings' => array(
             'type' => array(
-              'contentpage' => 'contentpage',
+              'os2web_base_contentpage' => 'os2web_base_contentpage',
             ),
           ),
           'context' => 'argument_node_edit_1',

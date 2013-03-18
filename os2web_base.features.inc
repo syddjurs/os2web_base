@@ -32,9 +32,9 @@ function os2web_indholdstyper_ctools_plugin_api() {
 function os2web_indholdstyper_image_default_styles() {
   $styles = array();
 
-  // Exported image style: indholdsside.
-  $styles['indholdsside'] = array(
-    'name' => 'indholdsside',
+  // Exported image style: os2web_base_style_image.
+  $styles['os2web_base_style_image'] = array(
+    'name' => 'os2web_base_style_image',
     'effects' => array(
       1 => array(
         'label' => 'Skalér og beskær',
@@ -54,9 +54,9 @@ function os2web_indholdstyper_image_default_styles() {
     ),
   );
 
-  // Exported image style: medium-content.
-  $styles['medium-content'] = array(
-    'name' => 'medium-content',
+  // Exported image style: os2web_base_style_medium.
+  $styles['os2web_base_style_medium'] = array(
+    'name' => 'os2web_base_style_medium',
     'effects' => array(
       5 => array(
         'label' => 'Skalér',
@@ -93,9 +93,9 @@ function os2web_indholdstyper_image_default_styles() {
     ),
   );
 
-  // Exported image style: news-cycle-medium.
-  $styles['news-cycle-medium'] = array(
-    'name' => 'news-cycle-medium',
+  // Exported image style: os2web_base_style_news_medium.
+  $styles['os2web_base_style_news_medium'] = array(
+    'name' => 'os2web_base_style_news_medium',
     'effects' => array(
       4 => array(
         'label' => 'Skalér og beskær',
@@ -115,9 +115,9 @@ function os2web_indholdstyper_image_default_styles() {
     ),
   );
 
-  // Exported image style: news-cycle-small.
-  $styles['news-cycle-small'] = array(
-    'name' => 'news-cycle-small',
+  // Exported image style: os2web_base_style_news_small.
+  $styles['os2web_base_style_news_small'] = array(
+    'name' => 'os2web_base_style_news_small',
     'effects' => array(
       3 => array(
         'label' => 'Skalér og beskær',
@@ -137,9 +137,9 @@ function os2web_indholdstyper_image_default_styles() {
     ),
   );
 
-  // Exported image style: news_big.
-  $styles['news_big'] = array(
-    'name' => 'news_big',
+  // Exported image style: os2web_base_style_news_big.
+  $styles['os2web_base_style_news_big'] = array(
+    'name' => 'os2web_base_style_news_big',
     'effects' => array(
       2 => array(
         'label' => 'Skalér og beskær',
@@ -159,9 +159,9 @@ function os2web_indholdstyper_image_default_styles() {
     ),
   );
 
-  // Exported image style: rotating_image.
-  $styles['rotating_image'] = array(
-    'name' => 'rotating_image',
+  // Exported image style: os2web_base_style_rotating.
+  $styles['os2web_base_style_rotating'] = array(
+    'name' => 'os2web_base_style_rotating',
     'effects' => array(
       1 => array(
         'label' => 'Skalér og beskær',
@@ -181,9 +181,9 @@ function os2web_indholdstyper_image_default_styles() {
     ),
   );
 
-  // Exported image style: rotating_image_small.
-  $styles['rotating_image_small'] = array(
-    'name' => 'rotating_image_small',
+  // Exported image style: os2web_base_style_rotating_small.
+  $styles['os2web_base_style_rotating_small'] = array(
+    'name' => 'os2web_base_style_rotating_small',
     'effects' => array(
       2 => array(
         'label' => 'Skalér og beskær',
@@ -211,7 +211,7 @@ function os2web_indholdstyper_image_default_styles() {
  */
 function os2web_indholdstyper_node_info() {
   $items = array(
-    'contentpage' => array(
+    'os2web_base_contentpage' => array(
       'name' => t('Indholdsside'),
       'base' => 'node_content',
       'description' => t('Almindelig webside til generel brug på sitet.'),
@@ -219,7 +219,7 @@ function os2web_indholdstyper_node_info() {
       'title_label' => t('Overskrift'),
       'help' => '',
     ),
-    'galleri' => array(
+    'os2web_base_gallery' => array(
       'name' => t('Galleri'),
       'base' => 'node_content',
       'description' => '',
@@ -227,7 +227,7 @@ function os2web_indholdstyper_node_info() {
       'title_label' => t('Overskrift'),
       'help' => '',
     ),
-    'iframe_selvbetjeningsl_sning_mm' => array(
+    'os2web_base_iframe' => array(
       'name' => t('iFrame, Selvbetjeningsløsning mm.'),
       'base' => 'node_content',
       'description' => '',
@@ -243,7 +243,7 @@ function os2web_indholdstyper_node_info() {
       'title_label' => t('Titel'),
       'help' => '',
     ),
-    'news' => array(
+    'os2web_base_news' => array(
       'name' => t('Nyhed'),
       'base' => 'node_content',
       'description' => '',
@@ -251,7 +251,7 @@ function os2web_indholdstyper_node_info() {
       'title_label' => t('Overskrift'),
       'help' => '',
     ),
-    'rotating_image' => array(
+    'os2web_base_rotating_image' => array(
       'name' => t('Billedekarrusel'),
       'base' => 'node_content',
       'description' => '',
@@ -259,7 +259,7 @@ function os2web_indholdstyper_node_info() {
       'title_label' => t('Overskrift'),
       'help' => '',
     ),
-    'selvbetjeningslinks' => array(
+    'os2web_base_selfservice_link' => array(
       'name' => t('Selvbetjeningslinks'),
       'base' => 'node_content',
       'description' => '',

@@ -10,8 +10,8 @@
 function os2web_indholdstyper_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-contentpage-body'.
-  $fields['node-contentpage-body'] = array(
+  // Exported field: 'node-os2web_base_contentpage-body'.
+  $fields['node-os2web_base_contentpage-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -40,7 +40,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => array(
         0 => array(
           'summary' => '',
@@ -96,8 +96,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_billede'.
-  $fields['node-contentpage-field_billede'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_billede'.
+  $fields['node-os2web_base_contentpage-field_billede'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -127,7 +127,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -210,8 +210,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_case'.
-  $fields['node-contentpage-field_case'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_case'.
+  $fields['node-os2web_base_contentpage-field_case'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -227,7 +227,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'case_ident',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -269,8 +269,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_doc'.
-  $fields['node-contentpage-field_doc'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_doc'.
+  $fields['node-os2web_base_contentpage-field_doc'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -290,7 +290,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'doc_ident',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -332,8 +332,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_editortags'.
-  $fields['node-contentpage-field_editortags'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_editortags'.
+  $fields['node-os2web_base_contentpage-field_editortags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -368,10 +368,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med dine egne stikord. 
+      'description' => 'Opmærk dit indhold med dine egne stikord.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -409,8 +409,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_indholdsside_spotboxe'.
-  $fields['node-contentpage-field_indholdsside_spotboxe'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_indholdsside_spotboxe'.
+  $fields['node-os2web_base_contentpage-field_indholdsside_spotboxe'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -435,26 +435,26 @@ function os2web_indholdstyper_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'contentpage' => 0,
+          'os2web_base_contentpage' => 0,
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
           'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'os2web_base_gallery' => 0,
+          'os2web_base_iframe' => 0,
           'institution' => 0,
           'knactivity' => 0,
           'kontaktblok' => 0,
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'ofir_job' => 0,
           'panel' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
           'right_column' => 0,
-          'rotating_image' => 0,
-          'selvbetjeningslinks' => 0,
+          'os2web_base_rotating_image' => 0,
+          'os2web_base_selfservice_link' => 0,
           'spotbox' => 'spotbox',
           'tema' => 0,
           'webform' => 0,
@@ -469,7 +469,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -508,8 +508,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_lead_image'.
-  $fields['node-contentpage-field_lead_image'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_lead_image'.
+  $fields['node-os2web_base_contentpage-field_lead_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -539,7 +539,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'deleted' => '0',
       'description' => 'Brug ikke dette felt, brug i stedet det andet billedfelt. Du behøver ikke slette billeder der ikke skal ændres fra dette felt.',
       'display' => array(
@@ -633,8 +633,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_mediafile'.
-  $fields['node-contentpage-field_mediafile'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_mediafile'.
+  $fields['node-os2web_base_contentpage-field_mediafile'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -665,7 +665,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'file',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -723,8 +723,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_node_reference_kontaktblok'.
-  $fields['node-contentpage-field_node_reference_kontaktblok'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_node_reference_kontaktblok'.
+  $fields['node-os2web_base_contentpage-field_node_reference_kontaktblok'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -750,26 +750,26 @@ function os2web_indholdstyper_field_default_fields() {
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
           'borgerservices' => 0,
-          'contentpage' => 0,
+          'os2web_base_contentpage' => 0,
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
           'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'os2web_base_gallery' => 0,
+          'os2web_base_iframe' => 0,
           'institution' => 0,
           'knactivity' => 0,
           'kontaktblok' => 'kontaktblok',
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'ofir_job' => 0,
           'panel' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
           'right_column' => 0,
-          'rotating_image' => 0,
-          'selvbetjeningslinks' => 0,
+          'os2web_base_rotating_image' => 0,
+          'os2web_base_selfservice_link' => 0,
           'spotbox' => 0,
           'tema' => 0,
           'webform' => 0,
@@ -784,7 +784,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -823,8 +823,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_noderef_selvbtjn'.
-  $fields['node-contentpage-field_noderef_selvbtjn'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_noderef_selvbtjn'.
+  $fields['node-os2web_base_contentpage-field_noderef_selvbtjn'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -850,26 +850,26 @@ function os2web_indholdstyper_field_default_fields() {
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
           'borgerservices' => 0,
-          'contentpage' => 0,
+          'os2web_base_contentpage' => 0,
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
           'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'os2web_base_gallery' => 0,
+          'os2web_base_iframe' => 0,
           'institution' => 0,
           'knactivity' => 0,
           'kontaktblok' => 0,
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'ofir_job' => 0,
           'panel' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
           'right_column' => 0,
-          'rotating_image' => 0,
-          'selvbetjeningslinks' => 'selvbetjeningslinks',
+          'os2web_base_rotating_image' => 0,
+          'os2web_base_selfservice_link' => 'os2web_base_selfservice_link',
           'spotbox' => 0,
           'tema' => 0,
           'webform' => 0,
@@ -884,7 +884,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -923,8 +923,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_organization'.
-  $fields['node-contentpage-field_organization'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_organization'.
+  $fields['node-os2web_base_contentpage-field_organization'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -959,10 +959,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med kommunens organisation. 
+      'description' => 'Opmærk dit indhold med kommunens organisation.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -1000,8 +1000,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_politics'.
-  $fields['node-contentpage-field_politics'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_politics'.
+  $fields['node-os2web_base_contentpage-field_politics'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1036,7 +1036,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Opmærk dit indhold med politisk parti, råd, nævn eller udvalg.
@@ -1077,8 +1077,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_resume_long'.
-  $fields['node-contentpage-field_resume_long'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_resume_long'.
+  $fields['node-os2web_base_contentpage-field_resume_long'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1105,7 +1105,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1152,8 +1152,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_rotate_publish'.
-  $fields['node-contentpage-field_rotate_publish'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_rotate_publish'.
+  $fields['node-os2web_base_contentpage-field_rotate_publish'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1183,7 +1183,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'datestamp',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -1228,8 +1228,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_site_structure'.
-  $fields['node-contentpage-field_site_structure'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_site_structure'.
+  $fields['node-os2web_base_contentpage-field_site_structure'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1265,7 +1265,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1300,8 +1300,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_skjul_relaterede_links'.
-  $fields['node-contentpage-field_skjul_relaterede_links'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_skjul_relaterede_links'.
+  $fields['node-os2web_base_contentpage-field_skjul_relaterede_links'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1327,7 +1327,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'list_boolean',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => array(
         0 => array(
           'value' => 0,
@@ -1368,8 +1368,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_source_id'.
-  $fields['node-contentpage-field_source_id'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_source_id'.
+  $fields['node-os2web_base_contentpage-field_source_id'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1385,7 +1385,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'number_integer',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1430,8 +1430,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_termref_kle'.
-  $fields['node-contentpage-field_termref_kle'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_termref_kle'.
+  $fields['node-os2web_base_contentpage-field_termref_kle'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1466,7 +1466,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Opmærk dit indhold med KLs Emneord.
@@ -1507,8 +1507,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-contentpage-field_termref_sted'.
-  $fields['node-contentpage-field_termref_sted'] = array(
+  // Exported field: 'node-os2web_base_contentpage-field_termref_sted'.
+  $fields['node-os2web_base_contentpage-field_termref_sted'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1543,10 +1543,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med steder fra kommunens GIS system. 
+      'description' => 'Opmærk dit indhold med steder fra kommunens GIS system.
 <br>Dette giver mulighed for kortvisning.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -1584,8 +1584,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-body'.
-  $fields['node-galleri-body'] = array(
+  // Exported field: 'node-os2web_base_gallery-body'.
+  $fields['node-os2web_base_gallery-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1614,7 +1614,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => array(
         0 => array(
           'summary' => '',
@@ -1667,8 +1667,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_editortags'.
-  $fields['node-galleri-field_editortags'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_editortags'.
+  $fields['node-os2web_base_gallery-field_editortags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1703,10 +1703,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med dine egne stikord. 
+      'description' => 'Opmærk dit indhold med dine egne stikord.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -1750,8 +1750,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_foto'.
-  $fields['node-galleri-field_foto'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_foto'.
+  $fields['node-os2web_base_gallery-field_foto'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1781,7 +1781,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -1792,7 +1792,7 @@ function os2web_indholdstyper_field_default_fields() {
             'slideshow_caption' => '',
             'slideshow_caption_link' => '',
             'slideshow_carousel_circular' => 0,
-            'slideshow_carousel_image_style' => 'news-cycle-small',
+            'slideshow_carousel_image_style' => 'os2web_base_news-cycle-small',
             'slideshow_carousel_scroll' => '1',
             'slideshow_carousel_speed' => '500',
             'slideshow_carousel_vertical' => 0,
@@ -1876,8 +1876,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_inherit_right_column'.
-  $fields['node-galleri-field_inherit_right_column'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_inherit_right_column'.
+  $fields['node-os2web_base_gallery-field_inherit_right_column'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1903,7 +1903,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'list_boolean',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => array(
         0 => array(
           'value' => 1,
@@ -1950,8 +1950,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_lead_image'.
-  $fields['node-galleri-field_lead_image'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_lead_image'.
+  $fields['node-os2web_base_gallery-field_lead_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -1981,7 +1981,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -2048,8 +2048,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_organization'.
-  $fields['node-galleri-field_organization'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_organization'.
+  $fields['node-os2web_base_gallery-field_organization'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2084,10 +2084,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med kommunens organisation. 
+      'description' => 'Opmærk dit indhold med kommunens organisation.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -2131,8 +2131,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_parent_node'.
-  $fields['node-galleri-field_parent_node'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_parent_node'.
+  $fields['node-os2web_base_gallery-field_parent_node'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -2157,24 +2157,24 @@ function os2web_indholdstyper_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'contentpage' => 'contentpage',
+          'os2web_base_contentpage' => 'os2web_base_contentpage',
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
           'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'os2web_base_gallery' => 0,
+          'os2web_base_iframe' => 0,
           'institution' => 0,
           'knactivity' => 0,
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'ofir_job' => 0,
           'panel' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
           'right_column' => 0,
-          'rotating_image' => 0,
+          'os2web_base_rotating_image' => 0,
           'spotbox' => 0,
           'tema' => 0,
           'webform' => 0,
@@ -2189,7 +2189,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -2234,8 +2234,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_politics'.
-  $fields['node-galleri-field_politics'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_politics'.
+  $fields['node-os2web_base_gallery-field_politics'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2270,7 +2270,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Opmærk dit indhold med politisk parti, råd, nævn eller udvalg.
@@ -2318,8 +2318,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_site_structure'.
-  $fields['node-galleri-field_site_structure'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_site_structure'.
+  $fields['node-os2web_base_gallery-field_site_structure'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -2355,7 +2355,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -2396,8 +2396,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_termref_kle'.
-  $fields['node-galleri-field_termref_kle'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_termref_kle'.
+  $fields['node-os2web_base_gallery-field_termref_kle'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2432,7 +2432,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Opmærk dit indhold med KLs Emneord.
@@ -2479,8 +2479,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-galleri-field_termref_sted'.
-  $fields['node-galleri-field_termref_sted'] = array(
+  // Exported field: 'node-os2web_base_gallery-field_termref_sted'.
+  $fields['node-os2web_base_gallery-field_termref_sted'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2515,10 +2515,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'galleri',
+      'bundle' => 'os2web_base_gallery',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med steder fra kommunens GIS system. 
+      'description' => 'Opmærk dit indhold med steder fra kommunens GIS system.
 <br>Dette giver mulighed for kortvisning.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -2562,8 +2562,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-body'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-body'] = array(
+  // Exported field: 'node-os2web_base_iframe-body'.
+  $fields['node-os2web_base_iframe-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -2592,7 +2592,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => array(
         0 => array(
           'summary' => '',
@@ -2648,8 +2648,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-field_editortags'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-field_editortags'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_editortags'.
+  $fields['node-os2web_base_iframe-field_editortags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2684,10 +2684,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med dine egne stikord. 
+      'description' => 'Opmærk dit indhold med dine egne stikord.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -2731,8 +2731,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-field_iframe_url'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-field_iframe_url'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_iframe_url'.
+  $fields['node-os2web_base_iframe-field_iframe_url'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -2761,7 +2761,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -2809,8 +2809,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-field_organization'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-field_organization'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_organization'.
+  $fields['node-os2web_base_iframe-field_organization'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2845,10 +2845,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med kommunens organisation. 
+      'description' => 'Opmærk dit indhold med kommunens organisation.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -2892,8 +2892,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-field_politics'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-field_politics'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_politics'.
+  $fields['node-os2web_base_iframe-field_politics'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2928,7 +2928,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Opmærk dit indhold med politisk parti, råd, nævn eller udvalg.
@@ -2975,8 +2975,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-field_source_id'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-field_source_id'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_source_id'.
+  $fields['node-os2web_base_iframe-field_source_id'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -2992,7 +2992,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'number_integer',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -3037,8 +3037,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-field_termref_kle'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-field_termref_kle'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_termref_kle'.
+  $fields['node-os2web_base_iframe-field_termref_kle'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -3073,7 +3073,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Opmærk dit indhold med KLs Emneord.
@@ -3120,8 +3120,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-field_termref_sted'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-field_termref_sted'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_termref_sted'.
+  $fields['node-os2web_base_iframe-field_termref_sted'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -3156,10 +3156,10 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Opmærk dit indhold med steder fra kommunens GIS system. 
+      'description' => 'Opmærk dit indhold med steder fra kommunens GIS system.
 <br>Dette giver mulighed for kortvisning.
 <br>Adskil flere opmærkninger med komma.',
       'display' => array(
@@ -3204,8 +3204,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-iframe_selvbetjeningsl_sning_mm-field_text'.
-  $fields['node-iframe_selvbetjeningsl_sning_mm-field_text'] = array(
+  // Exported field: 'node-os2web_base_iframe-field_text'.
+  $fields['node-os2web_base_iframe-field_text'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -3232,7 +3232,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'iframe_selvbetjeningsl_sning_mm',
+      'bundle' => 'os2web_base_iframe',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -3655,24 +3655,24 @@ function os2web_indholdstyper_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'contentpage' => 'contentpage',
+          'os2web_base_contentpage' => 'os2web_base_contentpage',
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
           'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'os2web_base_gallery' => 0,
+          'os2web_base_iframe' => 0,
           'institution' => 0,
           'knactivity' => 0,
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'ofir_job' => 0,
           'panel' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
           'right_column' => 0,
-          'rotating_image' => 0,
+          'os2web_base_rotating_image' => 0,
           'spotbox' => 0,
           'tema' => 0,
           'webform' => 0,
@@ -3946,8 +3946,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-body'.
-  $fields['node-news-body'] = array(
+  // Exported field: 'node-os2web_base_news-body'.
+  $fields['node-os2web_base_news-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -3976,7 +3976,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => array(
         0 => array(
           'summary' => '',
@@ -4035,8 +4035,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_additional_info'.
-  $fields['node-news-field_additional_info'] = array(
+  // Exported field: 'node-os2web_base_news-field_additional_info'.
+  $fields['node-os2web_base_news-field_additional_info'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -4063,7 +4063,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Hvis du har yderligere information, links eller fakta som er unikke for denne side, kan det tilføjes i dette felt. Indholdet vises i højre kolonne sammen med siden.',
@@ -4113,8 +4113,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_editortags'.
-  $fields['node-news-field_editortags'] = array(
+  // Exported field: 'node-os2web_base_news-field_editortags'.
+  $fields['node-os2web_base_news-field_editortags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -4149,7 +4149,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4194,8 +4194,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_lead_image'.
-  $fields['node-news-field_lead_image'] = array(
+  // Exported field: 'node-os2web_base_news-field_lead_image'.
+  $fields['node-os2web_base_news-field_lead_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -4225,7 +4225,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -4316,8 +4316,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_organization'.
-  $fields['node-news-field_organization'] = array(
+  // Exported field: 'node-os2web_base_news-field_organization'.
+  $fields['node-os2web_base_news-field_organization'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -4352,7 +4352,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4397,8 +4397,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_politics'.
-  $fields['node-news-field_politics'] = array(
+  // Exported field: 'node-os2web_base_news-field_politics'.
+  $fields['node-os2web_base_news-field_politics'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -4433,7 +4433,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4479,8 +4479,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_promoteto'.
-  $fields['node-news-field_promoteto'] = array(
+  // Exported field: 'node-os2web_base_news-field_promoteto'.
+  $fields['node-os2web_base_news-field_promoteto'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -4516,7 +4516,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4557,8 +4557,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_related'.
-  $fields['node-news-field_related'] = array(
+  // Exported field: 'node-os2web_base_news-field_related'.
+  $fields['node-os2web_base_news-field_related'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -4584,14 +4584,14 @@ function os2web_indholdstyper_field_default_fields() {
         'referenceable_types' => array(
           'activity' => 'activity',
           'borger_dk_permalink' => 0,
-          'contentpage' => 'contentpage',
+          'os2web_base_contentpage' => 'os2web_base_contentpage',
           'files' => 'files',
           'forum' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'os2web_base_iframe' => 0,
           'institution' => 'institution',
           'local_plan' => 'local_plan',
           'media' => 'media',
-          'news' => 'news',
+          'os2web_base_news' => 'os2web_base_news',
           'person' => 'person',
           'politician' => 'politician',
           'referat' => 'referat',
@@ -4609,7 +4609,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4660,8 +4660,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_related_tema'.
-  $fields['node-news-field_related_tema'] = array(
+  // Exported field: 'node-os2web_base_news-field_related_tema'.
+  $fields['node-os2web_base_news-field_related_tema'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -4687,14 +4687,14 @@ function os2web_indholdstyper_field_default_fields() {
         'referenceable_types' => array(
           'activity' => 0,
           'borger_dk_permalink' => 0,
-          'contentpage' => 0,
+          'os2web_base_contentpage' => 0,
           'files' => 0,
           'forum' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'os2web_base_iframe' => 0,
           'institution' => 0,
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
@@ -4712,7 +4712,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4763,8 +4763,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_resume_long'.
-  $fields['node-news-field_resume_long'] = array(
+  // Exported field: 'node-os2web_base_news-field_resume_long'.
+  $fields['node-os2web_base_news-field_resume_long'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -4791,7 +4791,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4849,8 +4849,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_site_structure'.
-  $fields['node-news-field_site_structure'] = array(
+  // Exported field: 'node-os2web_base_news-field_site_structure'.
+  $fields['node-os2web_base_news-field_site_structure'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -4886,7 +4886,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4927,8 +4927,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_source_id'.
-  $fields['node-news-field_source_id'] = array(
+  // Exported field: 'node-os2web_base_news-field_source_id'.
+  $fields['node-os2web_base_news-field_source_id'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -4944,7 +4944,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'number_integer',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -4995,8 +4995,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_termref_kle'.
-  $fields['node-news-field_termref_kle'] = array(
+  // Exported field: 'node-os2web_base_news-field_termref_kle'.
+  $fields['node-os2web_base_news-field_termref_kle'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -5031,7 +5031,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -5076,8 +5076,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_termref_sted'.
-  $fields['node-news-field_termref_sted'] = array(
+  // Exported field: 'node-os2web_base_news-field_termref_sted'.
+  $fields['node-os2web_base_news-field_termref_sted'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -5112,7 +5112,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'news',
+      'bundle' => 'os2web_base_news',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -5157,8 +5157,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-rotating_image-body'.
-  $fields['node-rotating_image-body'] = array(
+  // Exported field: 'node-os2web_base_rotating_image-body'.
+  $fields['node-os2web_base_rotating_image-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5187,7 +5187,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'rotating_image',
+      'bundle' => 'os2web_base_rotating_image',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Det der vises med sort',
@@ -5237,8 +5237,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-rotating_image-field_promoteto'.
-  $fields['node-rotating_image-field_promoteto'] = array(
+  // Exported field: 'node-os2web_base_rotating_image-field_promoteto'.
+  $fields['node-os2web_base_rotating_image-field_promoteto'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -5274,7 +5274,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'rotating_image',
+      'bundle' => 'os2web_base_rotating_image',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -5316,8 +5316,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-rotating_image-field_rotate_image'.
-  $fields['node-rotating_image-field_rotate_image'] = array(
+  // Exported field: 'node-os2web_base_rotating_image-field_rotate_image'.
+  $fields['node-os2web_base_rotating_image-field_rotate_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5347,7 +5347,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'rotating_image',
+      'bundle' => 'os2web_base_rotating_image',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -5416,8 +5416,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-rotating_image-field_rotate_publish'.
-  $fields['node-rotating_image-field_rotate_publish'] = array(
+  // Exported field: 'node-os2web_base_rotating_image-field_rotate_publish'.
+  $fields['node-os2web_base_rotating_image-field_rotate_publish'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5447,7 +5447,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'datestamp',
     ),
     'field_instance' => array(
-      'bundle' => 'rotating_image',
+      'bundle' => 'os2web_base_rotating_image',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -5505,8 +5505,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-rotating_image-field_rotating_link'.
-  $fields['node-rotating_image-field_rotating_link'] = array(
+  // Exported field: 'node-os2web_base_rotating_image-field_rotating_link'.
+  $fields['node-os2web_base_rotating_image-field_rotating_link'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5536,7 +5536,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'link_field',
     ),
     'field_instance' => array(
-      'bundle' => 'rotating_image',
+      'bundle' => 'os2web_base_rotating_image',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -5594,8 +5594,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-rotating_image-field_site_structure'.
-  $fields['node-rotating_image-field_site_structure'] = array(
+  // Exported field: 'node-os2web_base_rotating_image-field_site_structure'.
+  $fields['node-os2web_base_rotating_image-field_site_structure'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5631,7 +5631,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'rotating_image',
+      'bundle' => 'os2web_base_rotating_image',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -5673,8 +5673,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-selvbetjeningslinks-field_attached_node'.
-  $fields['node-selvbetjeningslinks-field_attached_node'] = array(
+  // Exported field: 'node-os2web_base_selfservice_link-field_attached_node'.
+  $fields['node-os2web_base_selfservice_link-field_attached_node'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5699,26 +5699,26 @@ function os2web_indholdstyper_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'contentpage' => 'contentpage',
+          'os2web_base_contentpage' => 'os2web_base_contentpage',
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
           'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 'iframe_selvbetjeningsl_sning_mm',
+          'os2web_base_gallery' => 0,
+          'os2web_base_iframe' => 'os2web_base_iframe',
           'institution' => 0,
           'knactivity' => 0,
           'kontaktblok' => 0,
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'ofir_job' => 0,
           'panel' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
           'right_column' => 0,
-          'rotating_image' => 0,
-          'selvbetjeningslinks' => 0,
+          'os2web_base_rotating_image' => 0,
+          'os2web_base_selfservice_link' => 0,
           'spotbox' => 0,
           'tema' => 0,
           'webform' => 0,
@@ -5733,7 +5733,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'selvbetjeningslinks',
+      'bundle' => 'os2web_base_selfservice_link',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -5779,8 +5779,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-selvbetjeningslinks-field_gruppe_id'.
-  $fields['node-selvbetjeningslinks-field_gruppe_id'] = array(
+  // Exported field: 'node-os2web_base_selfservice_link-field_gruppe_id'.
+  $fields['node-os2web_base_selfservice_link-field_gruppe_id'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5809,7 +5809,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'selvbetjeningslinks',
+      'bundle' => 'os2web_base_selfservice_link',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -5853,8 +5853,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-selvbetjeningslinks-field_kilde'.
-  $fields['node-selvbetjeningslinks-field_kilde'] = array(
+  // Exported field: 'node-os2web_base_selfservice_link-field_kilde'.
+  $fields['node-os2web_base_selfservice_link-field_kilde'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5883,7 +5883,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'selvbetjeningslinks',
+      'bundle' => 'os2web_base_selfservice_link',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -5932,8 +5932,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-selvbetjeningslinks-field_selvbetjening_direkte'.
-  $fields['node-selvbetjeningslinks-field_selvbetjening_direkte'] = array(
+  // Exported field: 'node-os2web_base_selfservice_link-field_selvbetjening_direkte'.
+  $fields['node-os2web_base_selfservice_link-field_selvbetjening_direkte'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -5962,7 +5962,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'selvbetjeningslinks',
+      'bundle' => 'os2web_base_selfservice_link',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Skal være inkl. <i>http://</i> hvis det er sider uden for sitet. Skal kun bruges til sider ser ikke kan indlejres som indhold via iframe.',
@@ -6007,8 +6007,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-selvbetjeningslinks-field_selvbetjeningslink_type'.
-  $fields['node-selvbetjeningslinks-field_selvbetjeningslink_type'] = array(
+  // Exported field: 'node-os2web_base_selfservice_link-field_selvbetjeningslink_type'.
+  $fields['node-os2web_base_selfservice_link-field_selvbetjeningslink_type'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -6036,7 +6036,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'list_text',
     ),
     'field_instance' => array(
-      'bundle' => 'selvbetjeningslinks',
+      'bundle' => 'os2web_base_selfservice_link',
       'default_value' => array(
         0 => array(
           'value' => 'liste',
@@ -6082,8 +6082,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-selvbetjeningslinks-field_site_structure'.
-  $fields['node-selvbetjeningslinks-field_site_structure'] = array(
+  // Exported field: 'node-os2web_base_selfservice_link-field_site_structure'.
+  $fields['node-os2web_base_selfservice_link-field_site_structure'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -6119,7 +6119,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'selvbetjeningslinks',
+      'bundle' => 'os2web_base_selfservice_link',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -6161,8 +6161,8 @@ function os2web_indholdstyper_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-selvbetjeningslinks-field_termref_kle'.
-  $fields['node-selvbetjeningslinks-field_termref_kle'] = array(
+  // Exported field: 'node-os2web_base_selfservice_link-field_termref_kle'.
+  $fields['node-os2web_base_selfservice_link-field_termref_kle'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -6197,7 +6197,7 @@ function os2web_indholdstyper_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'selvbetjeningslinks',
+      'bundle' => 'os2web_base_selfservice_link',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -6269,26 +6269,26 @@ function os2web_indholdstyper_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'contentpage' => 'contentpage',
+          'os2web_base_contentpage' => 'os2web_base_contentpage',
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
           'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 'iframe_selvbetjeningsl_sning_mm',
+          'os2web_base_gallery' => 0,
+          'os2web_base_iframe' => 'os2web_base_iframe',
           'institution' => 0,
           'knactivity' => 0,
           'kontaktblok' => 0,
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'ofir_job' => 0,
           'panel' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
           'right_column' => 0,
-          'rotating_image' => 0,
-          'selvbetjeningslinks' => 0,
+          'os2web_base_rotating_image' => 0,
+          'os2web_base_selfservice_link' => 0,
           'spotbox' => 0,
           'tema' => 0,
           'webform' => 0,
@@ -6363,25 +6363,25 @@ function os2web_indholdstyper_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'contentpage' => 0,
+          'os2web_base_contentpage' => 0,
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
           'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'os2web_base_gallery' => 0,
+          'os2web_base_iframe' => 0,
           'institution' => 0,
           'knactivity' => 0,
           'local_plan' => 0,
           'media' => 0,
-          'news' => 0,
+          'os2web_base_news' => 0,
           'ofir_job' => 0,
           'panel' => 0,
           'person' => 0,
           'politician' => 0,
           'referat' => 0,
           'right_column' => 0,
-          'rotating_image' => 0,
-          'selvbetjeningslinks' => 0,
+          'os2web_base_rotating_image' => 0,
+          'os2web_base_selfservice_link' => 0,
           'spotbox' => 'spotbox',
           'tema' => 0,
           'webform' => 0,
@@ -6458,16 +6458,16 @@ function os2web_indholdstyper_field_default_fields() {
   t('Opmærk dit indhold med KLs Emneord.
 <br>Se fuld oversigt på <a target="_blank" href="http://www.kle-online.dk">KLE-Online</a>.
 <br>Adskil flere opmærkninger med komma.');
-  t('Opmærk dit indhold med dine egne stikord. 
+  t('Opmærk dit indhold med dine egne stikord.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.');
-  t('Opmærk dit indhold med kommunens organisation. 
+  t('Opmærk dit indhold med kommunens organisation.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.');
   t('Opmærk dit indhold med politisk parti, råd, nævn eller udvalg.
 <br>Dette giver mulighed for at sammenkoble relateret indhold i listevisninger mv.
 <br>Adskil flere opmærkninger med komma.');
-  t('Opmærk dit indhold med steder fra kommunens GIS system. 
+  t('Opmærk dit indhold med steder fra kommunens GIS system.
 <br>Dette giver mulighed for kortvisning.
 <br>Adskil flere opmærkninger med komma.');
   t('Organisation');
