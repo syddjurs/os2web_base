@@ -65,3 +65,6 @@ projects[link][version] = "1.1"
 
 projects[content_taxonomy][subdir] = "contrib"
 projects[content_taxonomy][version] = "1.0-beta2"
+
+projects[references][subdir] = "contrib"
+projects[references][version] = "2.0"
