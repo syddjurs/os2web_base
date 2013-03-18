@@ -1,4 +1,4 @@
-name = OS2Web base
+name = OS2Web Base
 description = Base settings, types and layouts
 core = 7.x
 package = OS2Web - Core
