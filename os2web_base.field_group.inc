@@ -279,7 +279,7 @@ function os2web_base_field_group_info() {
     'label' => 'Skjult',
     'weight' => '46',
     'children' => array(
-      0 => 'field_additional_info',
+      0 => 'field_os2web_base_field_add_info',
       1 => 'field_os2web_base_field_related',
       2 => 'field_os2web_base_field_rel_subj',
       3 => 'field_os2web_base_field_sourceid',

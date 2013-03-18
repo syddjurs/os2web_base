@@ -3913,14 +3913,14 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-os2web_base_news-field_additional_info'.
-  $fields['node-os2web_base_news-field_additional_info'] = array(
+  // Exported field: 'node-os2web_base_news-field_os2web_base_field_add_info'.
+  $fields['node-os2web_base_news-field_os2web_base_field_add_info'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_additional_info',
+      'field_name' => 'field_os2web_base_field_add_info',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -3972,7 +3972,7 @@ function os2web_base_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_additional_info',
+      'field_name' => 'field_os2web_base_field_add_info',
       'label' => 'Unikt indhold',
       'required' => 0,
       'settings' => array(
