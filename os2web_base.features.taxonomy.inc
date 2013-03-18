@@ -9,9 +9,9 @@
  */
 function os2web_indholdstyper_taxonomy_default_vocabularies() {
   return array(
-    'forfrem_til' => array(
+    'os2web_base_tax_promoteto' => array(
       'name' => 'Forfrem til',
-      'machine_name' => 'forfrem_til',
+      'machine_name' => 'os2web_base_tax_promoteto',
       'description' => 'Forside og portalforsider',
       'hierarchy' => '0',
       'module' => 'taxonomy',
