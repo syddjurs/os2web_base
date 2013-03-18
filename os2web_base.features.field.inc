@@ -6215,14 +6215,14 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-site_struktur-field_os2web_base_field_ref_node_fokus'.
-  $fields['taxonomy_term-site_struktur-field_os2web_base_field_ref_node_fokus'] = array(
+  // Exported field: 'taxonomy_term-site_struktur-field_os2web_base_field_ref_focu'.
+  $fields['taxonomy_term-site_struktur-field_os2web_base_field_ref_focu'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_os2web_base_field_ref_node_fokus',
+      'field_name' => 'field_os2web_base_field_ref_focu',
       'foreign keys' => array(
         'nid' => array(
           'columns' => array(
@@ -6288,7 +6288,7 @@ function os2web_base_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_os2web_base_field_ref_node_fokus',
+      'field_name' => 'field_os2web_base_field_ref_focu',
       'label' => 'Spotbox fokus',
       'required' => 0,
       'settings' => array(
