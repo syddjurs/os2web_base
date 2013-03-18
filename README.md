@@ -25,6 +25,7 @@ Dependencies
 - strongarm
 - libraries
 - link
+- content_taxonomy
 - os2web_taxonomies
 
 Installation
