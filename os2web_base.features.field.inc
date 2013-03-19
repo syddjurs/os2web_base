@@ -1132,7 +1132,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
+            'vocabulary' => 'os2web_base_tax_site_structure',
             'parent' => '0',
             'depth' => '',
           ),
@@ -2222,7 +2222,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
+            'vocabulary' => 'os2web_base_tax_site_structure',
             'parent' => '0',
             'depth' => '',
           ),
@@ -3710,7 +3710,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
+            'vocabulary' => 'os2web_base_tax_site_structure',
             'parent' => '0',
             'depth' => '',
           ),
@@ -4753,7 +4753,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
+            'vocabulary' => 'os2web_base_tax_site_structure',
             'parent' => '0',
             'depth' => '',
           ),
@@ -5498,7 +5498,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
+            'vocabulary' => 'os2web_base_tax_site_structure',
             'parent' => '0',
             'depth' => '',
           ),
@@ -5986,7 +5986,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'os2web_taxonomies_tax_site_struc',
+            'vocabulary' => 'os2web_base_tax_site_structure',
             'parent' => '0',
             'depth' => '',
           ),
@@ -6121,8 +6121,8 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_base_field_ref_node'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_base_field_ref_node'] = array(
+  // Exported field: 'taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_ref_node'.
+  $fields['taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_ref_node'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -6181,7 +6181,7 @@ function os2web_base_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'os2web_taxonomies_tax_site_struc',
+      'bundle' => 'os2web_base_tax_site_structure',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Vælg de spotboxe der skal vises nederst på siden.',
@@ -6215,8 +6215,8 @@ function os2web_base_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_base_field_ref_focu'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_base_field_ref_focu'] = array(
+  // Exported field: 'taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_ref_focu'.
+  $fields['taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_ref_focu'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -6274,7 +6274,7 @@ function os2web_base_field_default_fields() {
       'type' => 'node_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'os2web_taxonomies_tax_site_struc',
+      'bundle' => 'os2web_base_tax_site_structure',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -6304,6 +6304,335 @@ function os2web_base_field_default_fields() {
         ),
         'type' => 'node_reference_autocomplete',
         'weight' => '7',
+      ),
+    ),
+  );
+
+  // Exported field: 'taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_issubsit'.
+  $fields['taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_issubsit'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_os2web_base_field_issubsit',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => '0',
+          1 => '1',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_boolean',
+    ),
+    'field_instance' => array(
+      'bundle' => 'os2web_base_tax_site_structure',
+      'default_value' => array(
+        0 => array(
+          'value' => 0,
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_os2web_base_field_issubsit',
+      'label' => 'Is subsite',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'display_label' => 1,
+        ),
+        'type' => 'options_onoff',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_banner'.
+  $fields['taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_banner'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_os2web_base_field_banner',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'os2web_base_tax_site_structure',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_os2web_base_field_banner',
+      'label' => 'Subsite banner',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'alt_field_required' => 0,
+        'default_image' => 0,
+        'file_directory' => 'subsite/banner',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'title_field_required' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_logo'.
+  $fields['taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_logo'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_os2web_base_field_logo',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'os2web_base_tax_site_structure',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_os2web_base_field_logo',
+      'label' => 'Subsite logo',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 1,
+        'alt_field_required' => 0,
+        'default_image' => 0,
+        'file_directory' => 'subsite/logo',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'title_field_required' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(
+              'attach' => 0,
+              'plupload' => 0,
+              'reference' => 0,
+              'remote' => 0,
+            ),
+            'source_attach' => array(
+              'absolute' => '0',
+              'attach_mode' => 'copy',
+              'path' => 'file_attach',
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '3',
+      ),
+    ),
+  );
+
+
+  // Exported field: 'taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_contact'.
+  $fields['taxonomy_term-os2web_base_tax_site_structure-field_os2web_base_field_contact'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_os2web_base_field_contact',
+      'foreign keys' => array(
+        'nid' => array(
+          'columns' => array(
+            'nid' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'nid' => array(
+          0 => 'nid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'node_reference',
+      'settings' => array(
+        'referenceable_types' => array(
+          'borger_dk_permalink' => 0,
+          'borgerservices' => 0,
+          'contentpage' => 0,
+          'esdh_dokument' => 0,
+          'esdh_sag' => 0,
+          'files' => 0,
+          'galleri' => 0,
+          'iframe_selvbetjeningsl_sning_mm' => 0,
+          'institution' => 0,
+          'knactivity' => 0,
+          'kontaktblok' => 'kontaktblok',
+          'local_plan' => 0,
+          'media' => 0,
+          'news' => 0,
+          'ofir_job' => 0,
+          'panel' => 0,
+          'person' => 0,
+          'politician' => 0,
+          'referat' => 0,
+          'right_column' => 0,
+          'rotating_image' => 0,
+          'selvbetjeningslinks' => 0,
+          'spotbox' => 0,
+          'tema' => 0,
+          'webform' => 0,
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => '',
+          'view_name' => '',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'node_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'os2web_base_tax_site_structure',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'node_reference',
+          'settings' => array(),
+          'type' => 'node_reference_default',
+          'weight' => 6,
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_os2web_base_field_contact',
+      'label' => 'Kontaktblok',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'node_reference',
+        'settings' => array(
+          'autocomplete_match' => 'contains',
+          'autocomplete_path' => 'node_reference/autocomplete',
+          'size' => '60',
+        ),
+        'type' => 'node_reference_autocomplete',
+        'weight' => '8',
       ),
     ),
   );
@@ -6375,6 +6704,11 @@ function os2web_base_field_default_fields() {
   t('Vælg billede');
   t('Vælg de spotboxe der skal vises nederst på siden.');
   t('iFrame URL');
+  t('Is subsite');
+  t('Subsite banner');
+  t('Subsite logo');
+  t('structure');
+  t('Kontaktblok');
 
   return $fields;
 }
