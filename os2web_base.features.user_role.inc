@@ -10,31 +10,31 @@
 function os2web_base_user_default_roles() {
   $roles = array();
 
-  // Exported role: os2web_base_role_administrator.
+  // Exported role: Administrator.
   $roles['os2web_base_role_administrator'] = array(
     'name' => 'Administrator',
     'weight' => '5',
   );
 
-  // Exported role: os2web_base_role_editor.
+  // Exported role: Editor.
   $roles['os2web_base_role_editor'] = array(
     'name' => 'Editor',
     'weight' => '3',
   );
 
-  // Exported role: os2web_base_role_communication.
+  // Exported role: Kommunikation.
   $roles['os2web_base_role_communication'] = array(
     'name' => 'Kommunikation',
     'weight' => '6',
   );
 
-  // Exported role: os2web_base_role_student.
+  // Exported role: Student.
   $roles['os2web_base_role_student'] = array(
     'name' => 'Student',
     'weight' => '2',
   );
 
-  // Exported role: os2web_base_role_webmaster.
+  // Exported role: Webmaster.
   $roles['os2web_base_role_webmaster'] = array(
     'name' => 'Webmaster',
     'weight' => '4',

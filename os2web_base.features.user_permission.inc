@@ -41,10 +41,10 @@ function os2web_base_user_default_permissions() {
   $permissions['create os2web_base_rotating_image content'] = array(
     'name' => 'create os2web_base_rotating_image content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -53,9 +53,9 @@ function os2web_base_user_default_permissions() {
   $permissions['delete any os2web_base_contentpage content'] = array(
     'name' => 'delete any os2web_base_contentpage content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_communication',
-      2 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Kommunikation',
+      2 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -64,9 +64,9 @@ function os2web_base_user_default_permissions() {
   $permissions['delete any os2web_base_gallery content'] = array(
     'name' => 'delete any os2web_base_gallery content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -75,9 +75,9 @@ function os2web_base_user_default_permissions() {
   $permissions['delete any os2web_base_news content'] = array(
     'name' => 'delete any os2web_base_news content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -86,10 +86,10 @@ function os2web_base_user_default_permissions() {
   $permissions['delete any os2web_base_rotating_image content'] = array(
     'name' => 'delete any os2web_base_rotating_image content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -98,10 +98,10 @@ function os2web_base_user_default_permissions() {
   $permissions['delete own os2web_base_contentpage content'] = array(
     'name' => 'delete own os2web_base_contentpage content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -110,10 +110,10 @@ function os2web_base_user_default_permissions() {
   $permissions['delete own os2web_base_gallery content'] = array(
     'name' => 'delete own os2web_base_gallery content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -131,10 +131,10 @@ function os2web_base_user_default_permissions() {
   $permissions['delete own os2web_base_rotating_image content'] = array(
     'name' => 'delete own os2web_base_rotating_image content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -143,10 +143,10 @@ function os2web_base_user_default_permissions() {
   $permissions['edit any os2web_base_contentpage content'] = array(
     'name' => 'edit any os2web_base_contentpage content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -155,9 +155,9 @@ function os2web_base_user_default_permissions() {
   $permissions['edit any os2web_base_gallery content'] = array(
     'name' => 'edit any os2web_base_gallery content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -166,9 +166,9 @@ function os2web_base_user_default_permissions() {
   $permissions['edit any os2web_base_news content'] = array(
     'name' => 'edit any os2web_base_news content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -177,10 +177,10 @@ function os2web_base_user_default_permissions() {
   $permissions['edit any os2web_base_rotating_image content'] = array(
     'name' => 'edit any os2web_base_rotating_image content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -216,10 +216,10 @@ function os2web_base_user_default_permissions() {
   $permissions['edit own os2web_base_rotating_image content'] = array(
     'name' => 'edit own os2web_base_rotating_image content',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -228,8 +228,8 @@ function os2web_base_user_default_permissions() {
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -238,8 +238,8 @@ function os2web_base_user_default_permissions() {
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Webmaster',
     ),
     'module' => 'filter',
   );
@@ -248,8 +248,8 @@ function os2web_base_user_default_permissions() {
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Webmaster',
     ),
     'module' => 'image',
   );
@@ -258,8 +258,8 @@ function os2web_base_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -268,10 +268,10 @@ function os2web_base_user_default_permissions() {
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'filter',
   );
@@ -280,10 +280,10 @@ function os2web_base_user_default_permissions() {
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
-      0 => 'os2web_base_role_administrator',
-      1 => 'os2web_base_role_editor',
-      2 => 'os2web_base_role_communication',
-      3 => 'os2web_base_role_webmaster',
+      0 => 'Administrator',
+      1 => 'Editor',
+      2 => 'Kommunikation',
+      3 => 'Webmaster',
     ),
     'module' => 'filter',
   );
