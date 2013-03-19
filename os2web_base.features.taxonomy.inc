@@ -17,9 +17,9 @@ function os2web_base_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'os2web_taxonomies_tax_site_struc' => array(
+    'os2web_base_tax_site_structure' => array(
       'name' => 'Overordnet placering og sitestruktur',
-      'machine_name' => 'os2web_taxonomies_tax_site_struc',
+      'machine_name' => 'os2web_base_tax_site_structure',
       'description' => 'Vælg de steder i hjemmesidens overordnede struktur hvor indholdet skal publiceres.',
       'hierarchy' => '1',
       'module' => 'taxonomy',
