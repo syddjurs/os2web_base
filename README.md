@@ -4,7 +4,7 @@ OS2Web Base
 Description
 -----------
 This module provides an base of a OS2Web Project. This includes default content types,
-fields, taxonomies and layouts.
+fields, taxonomies, roles, permissions and layouts.
 
 Dependencies
 -----------
