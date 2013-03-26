@@ -69,6 +69,9 @@ projects[content_taxonomy][version] = "1.0-beta2"
 projects[references][subdir] = "contrib"
 projects[references][version] = "2.0"
 
+projects[workbench][subdir] = "contrib"
+projects[workbench][version] = "1.2"
+
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-unstable7"
 ; projects[file_entity][patch][] = "http://drupal.org/files/1553094-alt_and_title_support_for_images-175.patch"
