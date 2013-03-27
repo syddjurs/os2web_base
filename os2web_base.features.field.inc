@@ -627,7 +627,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'borgerservices' => 0,
+          'os2web_citizenservices_service' => 0,
           'os2web_base_contentpage' => 0,
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
@@ -636,7 +636,7 @@ function os2web_base_field_default_fields() {
           'os2web_base_iframe' => 0,
           'institution' => 0,
           'knactivity' => 0,
-          'kontaktblok' => 'kontaktblok',
+          'os2web_contact_contact' => 'os2web_contact_contact',
           'local_plan' => 0,
           'media' => 0,
           'os2web_base_news' => 0,
@@ -727,7 +727,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'borgerservices' => 0,
+          'os2web_citizenservices_service' => 0,
           'os2web_base_contentpage' => 0,
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
@@ -6568,7 +6568,7 @@ function os2web_base_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'borger_dk_permalink' => 0,
-          'borgerservices' => 0,
+          'os2web_citizenservices_service' => 0,
           'contentpage' => 0,
           'esdh_dokument' => 0,
           'esdh_sag' => 0,
@@ -6577,7 +6577,7 @@ function os2web_base_field_default_fields() {
           'iframe_selvbetjeningsl_sning_mm' => 0,
           'institution' => 0,
           'knactivity' => 0,
-          'kontaktblok' => 'kontaktblok',
+          'os2web_contact_contact' => 'os2web_contact_contact',
           'local_plan' => 0,
           'media' => 0,
           'news' => 0,
