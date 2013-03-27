@@ -32,7 +32,6 @@ dependencies[] = os2web_taxonomies
 dependencies[] = file_entity
 dependencies[] = contact
 dependencies[] = workbench
-dependencies[] = workbench_access
 dependencies[] = workbench_media
 datestamp = 1338117520
 features[ctools][] = field_group:field_group:1
