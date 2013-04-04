@@ -11,6 +11,11 @@ projects[os2web_taxonomies][download][type] = "git"
 projects[os2web_taxonomies][download][branch] = "master"
 projects[os2web_taxonomies][download][url] = "git://github.com/OS2web/os2web_taxonomies.git"
 
+projects[os2web_esdh_field][type] = "module"
+projects[os2web_esdh_field][download][type] = "git"
+projects[os2web_esdh_field][download][branch] = "master"
+projects[os2web_esdh_field][download][url] = "git://github.com/OS2web/os2web_esdh_field.git"
+
 ;; Contrib modules below:
 
 ; Libraries
