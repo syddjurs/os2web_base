@@ -113,7 +113,7 @@ function os2web_base_field_default_fields() {
       'type' => 'os2web_esdh_field_case_ident',
     ),
     'field_instance' => array(
-      'bundle' => 'contentpage',
+      'bundle' => 'os2web_base_contentpage',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -122,7 +122,7 @@ function os2web_base_field_default_fields() {
           'label' => 'hidden',
           'module' => 'os2web_esdh_field',
           'settings' => array(),
-          'type' => 'case_ident_formatter',
+          'type' => 'os2web_esdh_field_case_ident_formatter',
           'weight' => '4',
         ),
         'related_block' => array(
@@ -1489,7 +1489,7 @@ function os2web_base_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_os2web_base_field_kle_ref',
       'label' => 'KL Emneord',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
