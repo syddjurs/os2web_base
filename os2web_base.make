@@ -44,6 +44,7 @@ projects[ctools][version] = "1.2"
 
 projects[media][subdir] = "contrib"
 projects[media][version] = "1.3"
+projects[media][patch][] = "http://drupal.org/files/media-media_browser-preview_javascript_incompatibility-1743040.patch"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.6"
