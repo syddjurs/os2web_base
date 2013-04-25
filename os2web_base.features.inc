@@ -93,6 +93,28 @@ function os2web_base_image_default_styles() {
     ),
   );
 
+  // Exported image style: os2web_base_style_news_big.
+  $styles['os2web_base_style_news_big'] = array(
+    'name' => 'os2web_base_style_news_big',
+    'effects' => array(
+      2 => array(
+        'label' => 'Skalér og beskær',
+        'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '214',
+          'height' => '116',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported image style: os2web_base_style_news_medium.
   $styles['os2web_base_style_news_medium'] = array(
     'name' => 'os2web_base_style_news_medium',
@@ -131,28 +153,6 @@ function os2web_base_image_default_styles() {
         'data' => array(
           'width' => '60',
           'height' => '69',
-        ),
-        'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported image style: os2web_base_style_news_big.
-  $styles['os2web_base_style_news_big'] = array(
-    'name' => 'os2web_base_style_news_big',
-    'effects' => array(
-      2 => array(
-        'label' => 'Skalér og beskær',
-        'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
-        'data' => array(
-          'width' => '214',
-          'height' => '116',
         ),
         'weight' => '1',
       ),
@@ -211,6 +211,14 @@ function os2web_base_image_default_styles() {
  */
 function os2web_base_node_info() {
   $items = array(
+    'media' => array(
+      'name' => t('Medier'),
+      'base' => 'node_content',
+      'description' => t('Video og audio.'),
+      'has_title' => '1',
+      'title_label' => t('Titel'),
+      'help' => '',
+    ),
     'os2web_base_contentpage' => array(
       'name' => t('Indholdsside'),
       'base' => 'node_content',
@@ -233,14 +241,6 @@ function os2web_base_node_info() {
       'description' => '',
       'has_title' => '1',
       'title_label' => t('Overskrift'),
-      'help' => '',
-    ),
-    'media' => array(
-      'name' => t('Medier'),
-      'base' => 'node_content',
-      'description' => t('Video og audio.'),
-      'has_title' => '1',
-      'title_label' => t('Titel'),
       'help' => '',
     ),
     'os2web_base_news' => array(

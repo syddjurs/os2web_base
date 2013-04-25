@@ -13,6 +13,13 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_media';
+  $strongarm->value = 0;
+  $export['comment_anonymous_media'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_os2web_base_contentpage';
   $strongarm->value = 0;
   $export['comment_anonymous_os2web_base_contentpage'] = $strongarm;
@@ -34,13 +41,6 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_media';
-  $strongarm->value = 0;
-  $export['comment_anonymous_media'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_os2web_base_news';
   $strongarm->value = 0;
   $export['comment_anonymous_os2web_base_news'] = $strongarm;
@@ -48,9 +48,9 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_os2web_base_contentpage';
-  $strongarm->value = '1';
-  $export['comment_os2web_base_contentpage'] = $strongarm;
+  $strongarm->name = 'comment_default_mode_media';
+  $strongarm->value = 1;
+  $export['comment_default_mode_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -76,16 +76,16 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_media';
+  $strongarm->name = 'comment_default_mode_os2web_base_news';
   $strongarm->value = 1;
-  $export['comment_default_mode_media'] = $strongarm;
+  $export['comment_default_mode_os2web_base_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_os2web_base_news';
-  $strongarm->value = 1;
-  $export['comment_default_mode_os2web_base_news'] = $strongarm;
+  $strongarm->name = 'comment_default_per_page_media';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -111,16 +111,16 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_media';
+  $strongarm->name = 'comment_default_per_page_os2web_base_news';
   $strongarm->value = '50';
-  $export['comment_default_per_page_media'] = $strongarm;
+  $export['comment_default_per_page_os2web_base_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_os2web_base_news';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_os2web_base_news'] = $strongarm;
+  $strongarm->name = 'comment_form_location_media';
+  $strongarm->value = 1;
+  $export['comment_form_location_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -146,16 +146,23 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_media';
+  $strongarm->name = 'comment_form_location_os2web_base_news';
   $strongarm->value = 1;
-  $export['comment_form_location_media'] = $strongarm;
+  $export['comment_form_location_os2web_base_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_os2web_base_news';
-  $strongarm->value = 1;
-  $export['comment_form_location_os2web_base_news'] = $strongarm;
+  $strongarm->name = 'comment_media';
+  $strongarm->value = '1';
+  $export['comment_media'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_os2web_base_contentpage';
+  $strongarm->value = '1';
+  $export['comment_os2web_base_contentpage'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -174,16 +181,16 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_media';
+  $strongarm->name = 'comment_os2web_base_news';
   $strongarm->value = '1';
-  $export['comment_media'] = $strongarm;
+  $export['comment_os2web_base_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_os2web_base_news';
+  $strongarm->name = 'comment_preview_media';
   $strongarm->value = '1';
-  $export['comment_os2web_base_news'] = $strongarm;
+  $export['comment_preview_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -209,16 +216,16 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_media';
+  $strongarm->name = 'comment_preview_os2web_base_news';
   $strongarm->value = '1';
-  $export['comment_preview_media'] = $strongarm;
+  $export['comment_preview_os2web_base_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_os2web_base_news';
-  $strongarm->value = '1';
-  $export['comment_preview_os2web_base_news'] = $strongarm;
+  $strongarm->name = 'comment_subject_field_media';
+  $strongarm->value = 1;
+  $export['comment_subject_field_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -240,13 +247,6 @@ function os2web_base_strongarm() {
   $strongarm->name = 'comment_subject_field_os2web_base_iframe';
   $strongarm->value = 1;
   $export['comment_subject_field_os2web_base_iframe'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_media';
-  $strongarm->value = 1;
-  $export['comment_subject_field_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -523,6 +523,13 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_media';
+  $strongarm->value = '0';
+  $export['language_content_type_media'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_os2web_base_contentpage';
   $strongarm->value = '0';
   $export['language_content_type_os2web_base_contentpage'] = $strongarm;
@@ -540,13 +547,6 @@ function os2web_base_strongarm() {
   $strongarm->name = 'language_content_type_os2web_base_iframe';
   $strongarm->value = '0';
   $export['language_content_type_os2web_base_iframe'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_media';
-  $strongarm->value = '0';
-  $export['language_content_type_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -572,25 +572,6 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_os2web_base_contentpage';
-  $strongarm->value = array(
-    0 => 'menu-erhverv-genveje',
-    1 => 'os2web-menu-contentmenu',
-  );
-  $export['menu_options_os2web_base_contentpage'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_os2web_base_gallery';
-  $strongarm->value = array(
-    0 => 'os2web-menu-contentmenu',
-  );
-  $export['menu_options_os2web_base_gallery'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_gallery_item';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -600,21 +581,40 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_os2web_base_iframe';
+  $strongarm->name = 'menu_options_media';
   $strongarm->value = array(
-    0 => 'os2web-menu-contentmenu',
-    1 => 'menu-selvbetjening',
+    0 => 'menu-contentmenu',
   );
-  $export['menu_options_os2web_base_iframe'] = $strongarm;
+  $export['menu_options_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_media';
+  $strongarm->name = 'menu_options_os2web_base_contentpage';
   $strongarm->value = array(
-    0 => 'os2web-menu-contentmenu',
+    0 => 'menu-erhverv-genveje',
+    1 => 'menu-contentmenu',
   );
-  $export['menu_options_media'] = $strongarm;
+  $export['menu_options_os2web_base_contentpage'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_os2web_base_gallery';
+  $strongarm->value = array(
+    0 => 'menu-contentmenu',
+  );
+  $export['menu_options_os2web_base_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_os2web_base_iframe';
+  $strongarm->value = array(
+    0 => 'menu-contentmenu',
+    1 => 'menu-selvbetjening',
+  );
+  $export['menu_options_os2web_base_iframe'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -642,20 +642,6 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_os2web_base_contentpage';
-  $strongarm->value = 'os2web-menu-contentmenu:0';
-  $export['menu_parent_os2web_base_contentpage'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_os2web_base_gallery';
-  $strongarm->value = 'os2web-menu-contentmenu:0';
-  $export['menu_parent_os2web_base_gallery'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_gallery_item';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_gallery_item'] = $strongarm;
@@ -663,16 +649,30 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_os2web_base_iframe';
-  $strongarm->value = 'menu-selvbetjening:0';
-  $export['menu_parent_os2web_base_iframe'] = $strongarm;
+  $strongarm->name = 'menu_parent_media';
+  $strongarm->value = 'menu-contentmenu:0';
+  $export['menu_parent_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_media';
-  $strongarm->value = 'os2web-menu-contentmenu:0';
-  $export['menu_parent_media'] = $strongarm;
+  $strongarm->name = 'menu_parent_os2web_base_contentpage';
+  $strongarm->value = 'menu-contentmenu:0';
+  $export['menu_parent_os2web_base_contentpage'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_os2web_base_gallery';
+  $strongarm->value = 'menu-contentmenu:0';
+  $export['menu_parent_os2web_base_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_os2web_base_iframe';
+  $strongarm->value = 'menu-selvbetjening:0';
+  $export['menu_parent_os2web_base_iframe'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -698,6 +698,26 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_gallery_item';
+  $strongarm->value = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+  $export['node_options_gallery_item'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_media';
+  $strongarm->value = array(
+    0 => 'status',
+    1 => 'revision',
+  );
+  $export['node_options_media'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_os2web_base_contentpage';
   $strongarm->value = array(
     0 => 'status',
@@ -717,32 +737,12 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_gallery_item';
-  $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
-  );
-  $export['node_options_gallery_item'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_os2web_base_iframe';
   $strongarm->value = array(
     0 => 'status',
     1 => 'revision',
   );
   $export['node_options_os2web_base_iframe'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_media';
-  $strongarm->value = array(
-    0 => 'status',
-    1 => 'revision',
-  );
-  $export['node_options_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -776,6 +776,13 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_media';
+  $strongarm->value = '1';
+  $export['node_preview_media'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_os2web_base_contentpage';
   $strongarm->value = '1';
   $export['node_preview_os2web_base_contentpage'] = $strongarm;
@@ -793,13 +800,6 @@ function os2web_base_strongarm() {
   $strongarm->name = 'node_preview_os2web_base_iframe';
   $strongarm->value = '1';
   $export['node_preview_os2web_base_iframe'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_media';
-  $strongarm->value = '1';
-  $export['node_preview_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -825,6 +825,20 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_gallery_item';
+  $strongarm->value = 1;
+  $export['node_submitted_gallery_item'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_media';
+  $strongarm->value = 1;
+  $export['node_submitted_media'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_os2web_base_contentpage';
   $strongarm->value = 0;
   $export['node_submitted_os2web_base_contentpage'] = $strongarm;
@@ -839,23 +853,9 @@ function os2web_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_gallery_item';
-  $strongarm->value = 1;
-  $export['node_submitted_gallery_item'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_os2web_base_iframe';
   $strongarm->value = 0;
   $export['node_submitted_os2web_base_iframe'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_media';
-  $strongarm->value = 1;
-  $export['node_submitted_media'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

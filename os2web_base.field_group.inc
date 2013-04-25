@@ -13,19 +13,22 @@ function os2web_base_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_os2web_base_group_images|node|os2web_base_contentpage|form';
-  $field_group->group_name = 'group_os2web_base_group_images';
+  $field_group->identifier = 'group_os2web_base_group_3|node|os2web_base_contentpage|form';
+  $field_group->group_name = 'group_os2web_base_group_3';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_os2web_base_group_content';
   $field_group->data = array(
-    'label' => 'Billeder og filer',
-    'weight' => '5',
+    'label' => 'Indstillinger',
+    'weight' => '8',
     'children' => array(
-      0 => 'field_os2web_base_field_lead_img',
-      1 => 'field_os2web_base_field_media',
-      2 => 'field_os2web_base_field_image',
+      0 => 'field_os2web_base_field_rotate',
+      1 => 'field_os2web_base_field_contact',
+      2 => 'field_os2web_base_field_spotbox',
+      3 => 'field_os2web_base_field_selfserv',
+      4 => 'field_os2web_base_field_hidlinks',
+      5 => 'group_os2web_base_group_hidden',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -37,29 +40,36 @@ function os2web_base_field_group_info() {
       ),
     ),
   );
-  $export['group_os2web_base_group_images|node|os2web_base_contentpage|form'] = $field_group;
+  $export['group_os2web_base_group_3|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_os2web_base_group_image|node|os2web_base_news|form';
-  $field_group->group_name = 'group_os2web_base_group_image';
+  $field_group->identifier = 'group_os2web_base_group_content|node|os2web_base_contentpage|form';
+  $field_group->group_name = 'group_os2web_base_group_content';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'os2web_base_news';
+  $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Billede',
-    'weight' => '1',
+    'label' => 'Indholdsside',
+    'weight' => '2',
     'children' => array(
-      0 => 'field_os2web_base_field_lead_img',
+      0 => 'group_os2web_base_group_images',
+      1 => 'group_os2web_base_group_esdh',
+      2 => 'group_os2web_base_group_extras',
+      3 => 'group_os2web_base_group_general',
+      4 => 'group_os2web_base_group_3',
     ),
-    'format_type' => 'multistep',
+    'format_type' => 'htabs',
     'format_settings' => array(
-      'label' => 'Billede',
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
     ),
   );
-  $export['group_os2web_base_group_image|node|os2web_base_news|form'] = $field_group;
+  $export['group_os2web_base_group_content|node|os2web_base_contentpage|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -180,38 +190,6 @@ function os2web_base_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_os2web_base_group_3|node|os2web_base_contentpage|form';
-  $field_group->group_name = 'group_os2web_base_group_3';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'os2web_base_contentpage';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_os2web_base_group_content';
-  $field_group->data = array(
-    'label' => 'Indstillinger',
-    'weight' => '8',
-    'children' => array(
-      0 => 'field_os2web_base_field_rotate',
-      1 => 'field_os2web_base_field_contact',
-      2 => 'field_os2web_base_field_spotbox',
-      3 => 'field_os2web_base_field_selfserv',
-      4 => 'field_os2web_base_field_hidlinks',
-      5 => 'group_os2web_base_group_hidden',
-    ),
-    'format_type' => 'htab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_os2web_base_group_3|node|os2web_base_contentpage|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_os2web_base_group_hidden|node|os2web_base_contentpage|form';
   $field_group->group_name = 'group_os2web_base_group_hidden';
   $field_group->entity_type = 'node';
@@ -299,31 +277,53 @@ function os2web_base_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_os2web_base_group_content|node|os2web_base_contentpage|form';
-  $field_group->group_name = 'group_os2web_base_group_content';
+  $field_group->identifier = 'group_os2web_base_group_images|node|os2web_base_contentpage|form';
+  $field_group->group_name = 'group_os2web_base_group_images';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'os2web_base_contentpage';
   $field_group->mode = 'form';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_os2web_base_group_content';
   $field_group->data = array(
-    'label' => 'Indholdsside',
-    'weight' => '2',
+    'label' => 'Billeder og filer',
+    'weight' => '5',
     'children' => array(
-      0 => 'group_os2web_base_group_images',
-      1 => 'group_os2web_base_group_esdh',
-      2 => 'group_os2web_base_group_extras',
-      3 => 'group_os2web_base_group_general',
-      4 => 'group_os2web_base_group_3',
+      0 => 'field_os2web_base_field_lead_img',
+      1 => 'field_os2web_base_field_media',
+      2 => 'field_os2web_base_field_image',
     ),
-    'format_type' => 'htabs',
+    'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => '',
+      'formatter' => 'closed',
       'instance_settings' => array(
+        'description' => '',
         'classes' => '',
+        'required_fields' => 1,
       ),
     ),
   );
-  $export['group_os2web_base_group_content|node|os2web_base_contentpage|form'] = $field_group;
+  $export['group_os2web_base_group_images|node|os2web_base_contentpage|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_os2web_base_group_image|node|os2web_base_news|form';
+  $field_group->group_name = 'group_os2web_base_group_image';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'os2web_base_news';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Billede',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_os2web_base_field_lead_img',
+    ),
+    'format_type' => 'multistep',
+    'format_settings' => array(
+      'label' => 'Billede',
+    ),
+  );
+  $export['group_os2web_base_group_image|node|os2web_base_news|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -354,33 +354,6 @@ function os2web_base_field_group_info() {
     ),
   );
   $export['group_os2web_base_group_settings|node|os2web_base_news|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_os2web_base_news_tabs|node|os2web_base_news|form';
-  $field_group->group_name = 'group_os2web_base_news_tabs';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'os2web_base_news';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'News',
-    'weight' => '0',
-    'children' => array(
-      0 => 'group_os2web_base_group_settings',
-      1 => 'group_os2web_base_group_taxono',
-      2 => 'group_os2web_base_group_text',
-    ),
-    'format_type' => 'htabs',
-    'format_settings' => array(
-      'formatter' => '',
-      'instance_settings' => array(
-        'classes' => '',
-      ),
-    ),
-  );
-  $export['group_os2web_base_news_tabs|node|os2web_base_news|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -507,6 +480,33 @@ function os2web_base_field_group_info() {
     ),
   );
   $export['group_os2web_base_group_text|node|os2web_base_news|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_os2web_base_news_tabs|node|os2web_base_news|form';
+  $field_group->group_name = 'group_os2web_base_news_tabs';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'os2web_base_news';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'News',
+    'weight' => '0',
+    'children' => array(
+      0 => 'group_os2web_base_group_settings',
+      1 => 'group_os2web_base_group_taxono',
+      2 => 'group_os2web_base_group_text',
+    ),
+    'format_type' => 'htabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_os2web_base_news_tabs|node|os2web_base_news|form'] = $field_group;
 
   return $export;
 }
