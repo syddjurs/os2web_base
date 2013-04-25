@@ -592,8 +592,7 @@ function os2web_base_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_os2web_base_contentpage';
   $strongarm->value = array(
-    0 => 'menu-erhverv-genveje',
-    1 => 'menu-contentmenu',
+    0 => 'os2web-menu-contentmenu',
   );
   $export['menu_options_os2web_base_contentpage'] = $strongarm;
 
@@ -657,7 +656,7 @@ function os2web_base_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_os2web_base_contentpage';
-  $strongarm->value = 'menu-contentmenu:0';
+  $strongarm->value = 'os2web-menu-contentmenu:0';
   $export['menu_parent_os2web_base_contentpage'] = $strongarm;
 
   $strongarm = new stdClass();
