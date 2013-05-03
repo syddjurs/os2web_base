@@ -20,20 +20,10 @@ projects[os2web_esdh_field][download][url] = "https://github.com/OS2web/os2web_e
 
 ; Libraries
 
-libraries[tinymce][download][type] = "get"
-libraries[tinymce][download][url] = "http://cloud.github.com/downloads/tinymce/tinymce/tinymce_3.5b3.zip"
-libraries[tinymce][directory_name] = "tinymce"
-libraries[tinymce][destination] = "libraries"
-
 libraries[htmlpurifier][download][type] = "get"
 libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.5.0.tar.gz"
 libraries[htmlpurifier][directory_name] = "htmlpurifier"
 libraries[htmlpurifier][destination] = "libraries"
-
-libraries[markitup][download][type] = "get"
-libraries[markitup][download][url] = "http://markitup.jaysalvat.com/downloads/download.php?id=releases/latest"
-libraries[markitup][directory_name] = "markitup"
-libraries[markitup][destination] = "libraries"
 
 libraries[plupload][download][type] = "get"
 libraries[plupload][download][url] = "https://github.com/downloads/moxiecode/plupload/plupload_1_5_2.zip"
@@ -41,7 +31,7 @@ libraries[plupload][directory_name] = "plupload"
 libraries[plupload][destination] = "libraries"
 
 libraries[ckeditor][download][type]= "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1.1/ckeditor_4.1.1_full.zip"
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][destination] = "libraries"
 
@@ -116,3 +106,6 @@ projects[workbench][version] = "1.2"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-unstable7"
 ; projects[file_entity][patch][] = "http://drupal.org/files/1553094-alt_and_title_support_for_images-175.patch"
+
+projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][version] = "1.13"
