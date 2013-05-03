@@ -47,6 +47,11 @@ libraries[jcarousel][download][url] = "http://sorgalla.com/projects/download-zip
 libraries[jcarousel][directory_name] = "jquery.jcarousel"
 libraries[jcarousel][destination] = "libraries"
 
+libraries[jcycle][download][type] = "get"
+libraries[jcycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
+libraries[jcycle][directory_name] = "jquery.cycle"
+libraries[jcycle][destination] = "libraries"
+
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip"
 libraries[jquery_ui][directory_name] = "jquery.ui"
