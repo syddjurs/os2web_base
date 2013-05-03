@@ -1,6 +1,13 @@
 api = 2
 core = 7.x
 
+; Hack to manually add drupal translations to profile as this is not supported by drush_make
+projects[da][type] = "translation"
+projects[da][download][type] = "get"
+projects[da][download][url] = "http://ftp.drupal.org/files/translations/7.x/drupal/drupal-7.22.da.po"
+projects[da][download][filename] = "da.po"
+projects[da][directory_name] = "translations"
+
 ;; OS2Web projects:
 
 ; OS2Web Modules
@@ -109,3 +116,6 @@ projects[file_entity][version] = "2.0-unstable7"
 
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.13"
+
+projects[l10n_update][subdir] = "contrib"
+projects[l10n_update][version] = "1.0-beta3"
