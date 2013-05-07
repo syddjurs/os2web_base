@@ -61,7 +61,7 @@ libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
 
 ; Features + related
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.0-beta1"
+projects[features][version] = "2.0-beta2"
 
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
@@ -74,7 +74,7 @@ projects[panels][version] = "3.2"
 ; Basic
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.2"
+projects[ctools][version] = "1.3"
 
 projects[media][subdir] = "contrib"
 projects[media][version] = "2.0-unstable7"
@@ -87,10 +87,10 @@ projects[eim][subdir] = "contrib"
 projects[eim][version] = "1.2"
 
 projects[imagefield_crop][subdir] = "contrib"
-projects[imagefield_crop][version] = "1.0"
+projects[imagefield_crop][version] = "1.1"
 
 projects[field_slideshow][subdir] = "contrib"
-projects[field_slideshow][version] = "1.6"
+projects[field_slideshow][version] = "1.82"
 
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.1"
@@ -98,7 +98,7 @@ projects[field_group][version] = "1.1"
 ; projects[field_group][patch][] = "patches/field_group-1.patch"
 
 projects[fieldable_panels_panes][subdir] = "contrib"
-projects[fieldable_panels_panes][version] = "1.2"
+projects[fieldable_panels_panes][version] = "1.4"
 
 projects[libraries][subdir] = "contrib"
 projects[libraries][version] = "2.1"
