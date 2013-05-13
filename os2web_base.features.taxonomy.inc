@@ -13,9 +13,9 @@ function os2web_base_taxonomy_default_vocabularies() {
       'name' => 'Forfrem til',
       'machine_name' => 'os2web_base_tax_promoteto',
       'description' => 'Forside og portalforsider',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -36,9 +36,9 @@ function os2web_base_taxonomy_default_vocabularies() {
       'name' => 'Overordnet placering og sitestruktur',
       'machine_name' => 'os2web_base_tax_site_structure',
       'description' => 'Vælg de steder i hjemmesidens overordnede struktur hvor indholdet skal publiceres.',
-      'hierarchy' => '1',
+      'hierarchy' => 1,
       'module' => 'taxonomy',
-      'weight' => '-10',
+      'weight' => -10,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
