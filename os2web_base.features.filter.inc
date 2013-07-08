@@ -17,14 +17,41 @@ function os2web_base_filter_default_formats() {
     'cache' => 1,
     'status' => 1,
     'weight' => -7,
-    'filters' => array(),
+    'filters' => array(
+      'filter_html' => array(
+        'weight' => -10,
+        'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <span> <div> <b> <br> <table> <tr> <td>',
+          'filter_html_help' => 1,
+          'filter_html_nofollow' => 0,
+        ),
+      ),
+      'filter_url' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(
+          'filter_url_length' => 60,
+        ),
+      ),
+      'media_filter' => array(
+        'weight' => 2,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_htmlcorrector' => array(
+        'weight' => 10,
+        'status' => 1,
+        'settings' => array(),
+      ),
+    ),
   );
 
   // Exported format: PHP code.
   $formats['php_code'] = array(
     'format' => 'php_code',
     'name' => 'PHP code',
-    'cache' => 0,
+    'cache' => 1,
     'status' => 1,
     'weight' => -6,
     'filters' => array(),
