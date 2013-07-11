@@ -612,7 +612,8 @@ function os2web_base_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_os2web_base_gallery';
   $strongarm->value = array(
-    0 => 'menu-indholdsmenu',
+    0 => 'os2web-menu-contentmenu',
+    1 => 'os2web-main-menu',
   );
   $export['menu_options_os2web_base_gallery'] = $strongarm;
 
@@ -621,8 +622,8 @@ function os2web_base_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_os2web_base_iframe';
   $strongarm->value = array(
-    0 => 'menu-indholdsmenu',
-    1 => 'menu-selvbetjening',
+    0 => 'os2web-menu-contentmenu',
+    1 => 'os2web-main-menu',
   );
   $export['menu_options_os2web_base_iframe'] = $strongarm;
 
@@ -672,14 +673,14 @@ function os2web_base_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_os2web_base_gallery';
-  $strongarm->value = 'menu-indholdsmenu:0';
+  $strongarm->value = 'os2web-main-menu:0';
   $export['menu_parent_os2web_base_gallery'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_os2web_base_iframe';
-  $strongarm->value = 'menu-selvbetjening:0';
+  $strongarm->value = 'os2web-menu-contentmenu:0';
   $export['menu_parent_os2web_base_iframe'] = $strongarm;
 
   $strongarm = new stdClass();
