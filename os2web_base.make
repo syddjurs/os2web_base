@@ -88,6 +88,7 @@ projects[eim][version] = "1.2"
 
 projects[imagefield_crop][subdir] = "contrib"
 projects[imagefield_crop][version] = "1.1"
+projects[imagefield_crop][patch][] = "https://drupal.org/files/clean_up_presave-1913412-27.patch"
 
 projects[field_slideshow][subdir] = "contrib"
 projects[field_slideshow][version] = "1.82"
