@@ -96,6 +96,22 @@ function os2web_base_field_default_field_bases() {
     'type' => 'image',
   );
 
+  // Exported field_base: 'field_os2web_base_field_case'
+  $field_bases['field_os2web_base_field_case'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_os2web_base_field_case',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'os2web_esdh_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'os2web_esdh_field_case_ident',
+  );
+
   // Exported field_base: 'field_os2web_base_field_contact'
   $field_bases['field_os2web_base_field_contact'] = array(
     'active' => 1,
@@ -183,6 +199,22 @@ function os2web_base_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_os2web_base_field_doc'
+  $field_bases['field_os2web_base_field_doc'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_os2web_base_field_doc',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'os2web_esdh_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'os2web_esdh_field_doc_ident',
   );
 
   // Exported field_base: 'field_os2web_base_field_edi_tags'

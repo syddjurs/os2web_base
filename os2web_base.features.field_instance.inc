@@ -486,6 +486,37 @@ function os2web_base_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-os2web_base_contentpage-field_os2web_base_field_case'
+  $field_instances['node-os2web_base_contentpage-field_os2web_base_field_case'] = array(
+    'bundle' => 'os2web_base_contentpage',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'os2web_esdh_field',
+        'settings' => array(),
+        'type' => 'os2web_esdh_field_case_ident_for',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_os2web_base_field_case',
+    'label' => 'ESDH Sag',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'os2web_esdh_field',
+      'settings' => array(),
+      'type' => 'os2web_esdh_field_case_ident_wid',
+      'weight' => 22,
+    ),
+  );
+
   // Exported field_instance: 'node-os2web_base_contentpage-field_os2web_base_field_contact'
   $field_instances['node-os2web_base_contentpage-field_os2web_base_field_contact'] = array(
     'bundle' => 'os2web_base_contentpage',
@@ -497,7 +528,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 14,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -526,6 +557,37 @@ function os2web_base_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-os2web_base_contentpage-field_os2web_base_field_doc'
+  $field_instances['node-os2web_base_contentpage-field_os2web_base_field_doc'] = array(
+    'bundle' => 'os2web_base_contentpage',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'os2web_esdh_field',
+        'settings' => array(),
+        'type' => 'os2web_esdh_field_doc_ident_for',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_os2web_base_field_doc',
+    'label' => 'ESDH Dokument',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'os2web_esdh_field',
+      'settings' => array(),
+      'type' => 'os2web_esdh_field_doc_ident_wid',
+      'weight' => 23,
+    ),
+  );
+
   // Exported field_instance: 'node-os2web_base_contentpage-field_os2web_base_field_edi_tags'
   $field_instances['node-os2web_base_contentpage-field_os2web_base_field_edi_tags'] = array(
     'bundle' => 'os2web_base_contentpage',
@@ -539,7 +601,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 17,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -583,7 +645,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 10,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -713,7 +775,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 16,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -856,7 +918,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 18,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -896,7 +958,7 @@ function os2web_base_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_table',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -957,7 +1019,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 19,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -999,7 +1061,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -1039,7 +1101,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 9,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -1086,7 +1148,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 12,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -1126,7 +1188,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 20,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -1172,7 +1234,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 13,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -1212,7 +1274,7 @@ function os2web_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 15,
       ),
       'related_block' => array(
         'label' => 'above',
@@ -3980,6 +4042,8 @@ function os2web_base_field_default_field_instances() {
   t('Brug ikke dette felt, brug i stedet det andet billedfelt. Du behøver ikke slette billeder der ikke skal ændres fra dette felt.');
   t('Det der vises med sort');
   t('Direkte link');
+  t('ESDH Dokument');
+  t('ESDH Sag');
   t('Egenavne / stednavne');
   t('Egennavne/stednavne');
   t('Forfrem til');

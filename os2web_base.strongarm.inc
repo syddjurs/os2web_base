@@ -296,7 +296,14 @@ function os2web_base_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'display' => array(),
+      'display' => array(
+        'webform' => array(
+          'default' => array(
+            'weight' => '7',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
       'form' => array(
         'title' => array(
           'weight' => '-5',
