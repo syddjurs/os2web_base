@@ -23,10 +23,10 @@ function os2web_base_field_group_info() {
     'label' => 'Indstillinger',
     'weight' => '8',
     'children' => array(
-      0 => 'field_os2web_base_field_rotate',
+      0 => 'field_os2web_base_field_spotbox',
       1 => 'field_os2web_base_field_contact',
-      2 => 'field_os2web_base_field_spotbox',
-      3 => 'field_os2web_base_field_selfserv',
+      2 => 'field_os2web_base_field_selfserv',
+      3 => 'field_os2web_base_field_rotate',
       4 => 'field_os2web_base_field_hidlinks',
       5 => 'group_os2web_base_group_hidden',
     ),
@@ -55,11 +55,11 @@ function os2web_base_field_group_info() {
     'label' => 'Indholdsside',
     'weight' => '2',
     'children' => array(
-      0 => 'group_os2web_base_group_images',
+      0 => 'group_os2web_base_group_3',
       1 => 'group_os2web_base_group_esdh',
       2 => 'group_os2web_base_group_extras',
       3 => 'group_os2web_base_group_general',
-      4 => 'group_os2web_base_group_3',
+      4 => 'group_os2web_base_group_images',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -82,8 +82,11 @@ function os2web_base_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Hentet fra kommunens sagssystem',
-    'weight' => '4',
-    'children' => array(),
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_os2web_base_field_case',
+      1 => 'field_os2web_base_field_doc',
+    ),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'label' => 'Hentet fra kommunens sagssystem',
@@ -138,11 +141,10 @@ function os2web_base_field_group_info() {
     'label' => 'Emneord',
     'weight' => '7',
     'children' => array(
-      0 => 'field_os2web_base_field_kle_ref',
-      1 => 'field_os2web_base_field_edi_tags',
-      2 => 'field_os2web_base_field_loca_ref',
-      3 => 'field_os2web_base_field_organiz',
-      4 => 'field_os2web_base_field_politics',
+      0 => 'field_os2web_base_field_edi_tags',
+      1 => 'field_os2web_base_field_organiz',
+      2 => 'field_os2web_base_field_politics',
+      3 => 'field_os2web_base_field_loca_ref',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -198,8 +200,8 @@ function os2web_base_field_group_info() {
     'label' => 'Skjult',
     'weight' => '18',
     'children' => array(
-      0 => 'field_os2web_base_field_sourceid',
-      1 => 'field_os2web_base_field_struct',
+      0 => 'field_os2web_base_field_struct',
+      1 => 'field_os2web_base_field_sourceid',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -285,9 +287,9 @@ function os2web_base_field_group_info() {
     'label' => 'Billeder og filer',
     'weight' => '5',
     'children' => array(
-      0 => 'field_os2web_base_field_lead_img',
-      1 => 'field_os2web_base_field_media',
-      2 => 'field_os2web_base_field_image',
+      0 => 'field_os2web_base_field_image',
+      1 => 'field_os2web_base_field_lead_img',
+      2 => 'field_os2web_base_field_media',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
