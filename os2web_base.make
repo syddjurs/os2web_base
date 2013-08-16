@@ -83,8 +83,8 @@ projects[panels][version] = "3.2"
 
 ; Basic
 
-projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.3"
+# projects[ctools][subdir] = "contrib"
+# projects[ctools][version] = "1.3"
 
 projects[media][subdir] = "contrib"
 projects[media][version] = "2.0-unstable7"
@@ -98,6 +98,7 @@ projects[eim][version] = "1.2"
 
 projects[imagefield_crop][subdir] = "contrib"
 projects[imagefield_crop][version] = "1.1"
+projects[imagefield_crop][patch][] = "http://drupal.org/files/imagefield_crop-undefined_index_und-1913412-9.patch"
 
 projects[field_slideshow][subdir] = "contrib"
 projects[field_slideshow][version] = "1.82"
