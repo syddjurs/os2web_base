@@ -94,7 +94,7 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.6"
 
 projects[eim][subdir] = "contrib"
-projects[eim][version] = "1.2"
+projects[eim][version] = "1.3"
 
 projects[imagefield_crop][subdir] = "contrib"
 projects[imagefield_crop][version] = "1.1"
