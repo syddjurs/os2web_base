@@ -32,6 +32,45 @@ function os2web_base_ctools_plugin_api() {
 function os2web_base_image_default_styles() {
   $styles = array();
 
+  // Exported image style: os2web_base_style_content.
+  $styles['os2web_base_style_content'] = array(
+    'name' => 'os2web_base_style_content',
+    'effects' => array(
+      1 => array(
+        'label' => 'Skalér',
+        'help' => 'Skalering bevarer billedets højde-bredde-forhold. Hvis kun den ene dimension angives vil den anden blive beregnet.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 460,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      2 => array(
+        'label' => 'Beskær',
+        'help' => 'Beskæring fjerner dele af billedet for at give det de angivne dimensioner.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 460,
+          'height' => 260,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: os2web_base_style_image.
   $styles['os2web_base_style_image'] = array(
     'name' => 'os2web_base_style_image',
