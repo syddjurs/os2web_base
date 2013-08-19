@@ -27,6 +27,16 @@ projects[os2web_esdh_field][download][url] = "https://github.com/OS2web/os2web_e
 
 ; Libraries
 
+libraries[jcycle][download][type] = "get"
+libraries[jcycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
+libraries[jcycle][directory_name] = "jquery.cycle"
+libraries[jcycle][destination] = "libraries"
+
+libraries[tinymce][download][type] = "get"
+libraries[tinymce][download][url] = "http://cloud.github.com/downloads/tinymce/tinymce/tinymce_3.5b3.zip"
+libraries[tinymce][directory_name] = "tinymce"
+libraries[tinymce][destination] = "libraries"
+
 libraries[htmlpurifier][download][type] = "get"
 libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.5.0.tar.gz"
 libraries[htmlpurifier][directory_name] = "htmlpurifier"
@@ -84,7 +94,7 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.6"
 
 projects[eim][subdir] = "contrib"
-projects[eim][version] = "1.2"
+projects[eim][version] = "1.3"
 
 projects[imagefield_crop][subdir] = "contrib"
 projects[imagefield_crop][version] = "1.1"
@@ -115,6 +125,12 @@ projects[references][version] = "2.0"
 
 projects[workbench][subdir] = "contrib"
 projects[workbench][version] = "1.2"
+
+projects[workbench_access][subdir] = "contrib"
+projects[workbench_access][version] = "1.2"
+
+projects[workbench_media][subdir] = "contrib"
+projects[workbench_media][version] = "1.1"
 
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-unstable7"

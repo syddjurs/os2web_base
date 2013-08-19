@@ -6709,7 +6709,7 @@ function os2web_base_field_default_fields() {
           'files' => 0,
           'institution' => 0,
           'knactivity' => 0,
-          'kontaktblok' => 0,
+          'os2web_contact_contact' => 'os2web_contact_contact',
           'local_plan' => 0,
           'media' => 0,
           'ofir_job' => 0,
