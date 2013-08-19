@@ -980,7 +980,7 @@ function os2web_base_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'PDF',
-      'file_extensions' => 'pdf swf',
+      'file_extensions' => 'pdf swf doc docx xlsx xls ppt pptx',
       'max_filesize' => '50 MB',
       'user_register_form' => FALSE,
     ),
@@ -990,15 +990,19 @@ function os2web_base_field_default_field_instances() {
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
+          'youtube' => 0,
         ),
         'allowed_types' => array(
           'audio' => 0,
-          'default' => 'default',
-          0 => 0,
+          'document' => 0,
           'image' => 0,
           'video' => 0,
         ),
-        'browser_plugins' => array(),
+        'browser_plugins' => array(
+          'media_internet' => 0,
+          'upload' => 0,
+          'youtube' => 0,
+        ),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
