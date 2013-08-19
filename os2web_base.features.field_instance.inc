@@ -980,7 +980,7 @@ function os2web_base_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'PDF',
-      'file_extensions' => 'pdf swf',
+      'file_extensions' => 'pdf swf doc docx xlsx xls ppt pptx',
       'max_filesize' => '50 MB',
       'user_register_form' => FALSE,
     ),
@@ -990,15 +990,19 @@ function os2web_base_field_default_field_instances() {
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
+          'youtube' => 0,
         ),
         'allowed_types' => array(
           'audio' => 0,
-          'default' => 'default',
-          0 => 0,
+          'document' => 0,
           'image' => 0,
           'video' => 0,
         ),
-        'browser_plugins' => array(),
+        'browser_plugins' => array(
+          'media_internet' => 0,
+          'upload' => 0,
+          'youtube' => 0,
+        ),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -2502,6 +2506,80 @@ function os2web_base_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-os2web_base_news-field_os2web_base_field_case'
+  $field_instances['node-os2web_base_news-field_os2web_base_field_case'] = array(
+    'bundle' => 'os2web_base_news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'os2web_esdh_field',
+        'settings' => array(),
+        'type' => 'os2web_esdh_field_case_ident_for',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_os2web_base_field_case',
+    'label' => 'ESDH Sag',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'os2web_esdh_field',
+      'settings' => array(),
+      'type' => 'os2web_esdh_field_case_ident_wid',
+      'weight' => 46,
+    ),
+  );
+
+  // Exported field_instance: 'node-os2web_base_news-field_os2web_base_field_doc'
+  $field_instances['node-os2web_base_news-field_os2web_base_field_doc'] = array(
+    'bundle' => 'os2web_base_news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'os2web_esdh_field',
+        'settings' => array(),
+        'type' => 'os2web_esdh_field_doc_ident_for',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_os2web_base_field_doc',
+    'label' => 'ESDH Dokument',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'os2web_esdh_field',
+      'settings' => array(),
+      'type' => 'os2web_esdh_field_doc_ident_wid',
+      'weight' => 47,
+    ),
+  );
+
   // Exported field_instance: 'node-os2web_base_news-field_os2web_base_field_edi_tags'
   $field_instances['node-os2web_base_news-field_os2web_base_field_edi_tags'] = array(
     'bundle' => 'os2web_base_news',
@@ -2605,7 +2683,7 @@ function os2web_base_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'medium',
+          'image_style' => 'os2web_base_style_content',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -2729,6 +2807,63 @@ function os2web_base_field_default_field_instances() {
       ),
       'type' => 'taxonomy_autocomplete',
       'weight' => 40,
+    ),
+  );
+
+  // Exported field_instance: 'node-os2web_base_news-field_os2web_base_field_media'
+  $field_instances['node-os2web_base_news-field_os2web_base_field_media'] = array(
+    'bundle' => 'os2web_base_news',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_table',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_os2web_base_field_media',
+    'label' => 'Filer',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'PDF',
+      'file_extensions' => 'pdf swf doc docx xlsx xls ppt pptx',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_internet' => 'media_internet',
+          'upload' => 'upload',
+          'youtube' => 'youtube',
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 0,
     ),
   );
 
@@ -4046,6 +4181,7 @@ function os2web_base_field_default_field_instances() {
   t('ESDH Sag');
   t('Egenavne / stednavne');
   t('Egennavne/stednavne');
+  t('Filer');
   t('Forfrem til');
   t('Forældre-menupunkt');
   t('Gruppe ID');
