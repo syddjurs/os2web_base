@@ -255,7 +255,7 @@ function os2web_base_field_group_info() {
   $field_group->parent_name = 'group_os2web_base_group_settings';
   $field_group->data = array(
     'label' => 'Skjult',
-    'weight' => '46',
+    'weight' => '48',
     'children' => array(
       0 => 'field_os2web_base_field_add_info',
       1 => 'field_os2web_base_field_related',
@@ -315,10 +315,8 @@ function os2web_base_field_group_info() {
   $field_group->data = array(
     'label' => 'Billede',
     'weight' => '1',
-    'children' => array(
-      0 => 'field_os2web_base_field_lead_img',
-    ),
-    'format_type' => 'multistep',
+    'children' => array(),
+    'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Billede',
     ),
@@ -339,8 +337,10 @@ function os2web_base_field_group_info() {
     'weight' => '3',
     'children' => array(
       0 => 'field_os2web_base_field_promote',
-      1 => 'path',
-      2 => 'group_os2web_base_group_hidden',
+      1 => 'field_os2web_base_field_case',
+      2 => 'field_os2web_base_field_doc',
+      3 => 'path',
+      4 => 'group_os2web_base_group_hidden',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -430,11 +430,11 @@ function os2web_base_field_group_info() {
     'label' => 'Emneord',
     'weight' => '2',
     'children' => array(
-      0 => 'field_os2web_base_field_kle_ref',
+      0 => 'field_os2web_base_field_edi_tags',
       1 => 'field_os2web_base_field_organiz',
-      2 => 'field_os2web_base_field_edi_tags',
-      3 => 'field_os2web_base_field_loca_ref',
-      4 => 'field_os2web_base_field_politics',
+      2 => 'field_os2web_base_field_politics',
+      3 => 'field_os2web_base_field_kle_ref',
+      4 => 'field_os2web_base_field_loca_ref',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -466,7 +466,8 @@ function os2web_base_field_group_info() {
       1 => 'field_os2web_base_field_lead_img',
       2 => 'field_os2web_base_field_summary',
       3 => 'field_os2web_base_field_struct',
-      4 => 'title',
+      4 => 'field_os2web_base_field_media',
+      5 => 'title',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
