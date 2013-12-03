@@ -49,3 +49,25 @@ function os2web_base_os2web_help($sections) {
 
   return $sections;
 }
+
+/**
+ * Implement hook_form_alter().
+ */
+function os2web_base_form_alter(&$form, $form_state, $form_id) {
+  // Add a second submit button to node forms.
+  if (isset($form['#node']) && ($form_id == $form['#node']->type . '_node_form')) {
+     $form['top_actions'] = array(
+        '#type' => 'actions',
+        '#weight' => -10,
+     );
+     $form['top_actions']['top_submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Save'),
+        '#weight' => -10,
+        '#validate' => array('node_form_validate'),
+        // Use default and an additional submit handler.
+        '#submit' => array('node_form_submit'),
+      );
+  }
+}
+
