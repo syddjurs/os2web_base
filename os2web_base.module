@@ -71,3 +71,17 @@ function os2web_base_form_alter(&$form, $form_state, $form_id) {
   }
 }
 
+/**
+ * Implements hook_cron().
+ */
+function os2web_base_cron() {
+  // Register our own shutdown function.
+  drupal_register_shutdown_function('_os2web_base_cron_shutdown');
+}
+
+/**
+ * Shutdown function to register the timestamp into a public accesible file.
+ */
+function _os2web_base_cron_shutdown() {
+  file_unmanaged_save_data(variable_get('cron_last'), 'public://os2web_cron_last', FILE_EXISTS_REPLACE);
+}
