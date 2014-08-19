@@ -34,6 +34,16 @@ function os2web_base_filter_default_formats() {
           'filter_url_length' => 60,
         ),
       ),
+      'os2web_cpr_filter' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(
+          'modulus11_check' => 1,
+          'date_check' => 1,
+          'replace_all_dash' => 1,
+          'dummy_value' => 'XXXXXX-XXXX',
+        ),
+      ),
       'media_filter' => array(
         'weight' => 2,
         'status' => 1,
@@ -64,7 +74,18 @@ function os2web_base_filter_default_formats() {
     'cache' => 1,
     'status' => 1,
     'weight' => -8,
-    'filters' => array(),
+    'filters' => array(
+      'os2web_cpr_filter' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(
+          'modulus11_check' => 1,
+          'date_check' => 1,
+          'replace_all_dash' => 1,
+          'dummy_value' => 'XXXXXX-XXXX',
+        ),
+      ),
+    ),
   );
 
   // Exported format: Raw.
@@ -74,7 +95,18 @@ function os2web_base_filter_default_formats() {
     'cache' => 1,
     'status' => 1,
     'weight' => 0,
-    'filters' => array(),
+    'filters' => array(
+      'os2web_cpr_filter' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(
+          'modulus11_check' => 1,
+          'date_check' => 1,
+          'replace_all_dash' => 1,
+          'dummy_value' => 'XXXXXX-XXXX',
+        ),
+      ),
+    ),
   );
 
   return $formats;

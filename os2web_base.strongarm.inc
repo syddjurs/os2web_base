@@ -294,6 +294,9 @@ function os2web_base_strongarm() {
       'os2web_meetings_meeting_detail_view' => array(
         'custom_settings' => FALSE,
       ),
+      'selfservice_link' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'display' => array(
@@ -421,6 +424,9 @@ function os2web_base_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'os2web_meetings_meeting_detail_view' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -521,7 +527,38 @@ function os2web_base_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__os2web_base_selfservice_link';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'selfservice_link' => array(
+        'custom_settings' => FALSE,
+      ),
+      'os2web_meetings_meeting_detail_view' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
